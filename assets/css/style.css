@@ -6,7 +6,7 @@
 
 .logo{
     position: absolute;
-    top: 20px;
+    top: 42px;
     left: 50%;
     transform: translateX(-50%); 
 }
@@ -33,14 +33,23 @@ body{
 }
 
 h1{
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
+#questionText{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 h2{
-margin-bottom: 20px;
-margin-left: 20px;
-margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .categories{
@@ -66,7 +75,7 @@ margin-right: 20px;
 .question-container{
     width: 100%;
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -113,7 +122,7 @@ margin-right: 20px;
     transform: translateX(-50%);
     margin-top: 20px;
     height: 40px;
-    width: 140px;
+    width: 70px;
     background-color: lightgreen;
     border: none;
     border-radius: 5px;
