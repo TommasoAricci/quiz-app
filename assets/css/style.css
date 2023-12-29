@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
 body{
-    background-image: url(/assets/img/1.jpg);
+    background-image: url(../img/1.jpg);
     background-size: 510px;    
     background-position: bottom;
     position: relative;
@@ -26,12 +33,12 @@ body{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 h2{
-margin-bottom: 30px;
+margin-bottom: 20px;
 margin-left: 20px;
 margin-right: 20px;
 }
@@ -45,7 +52,7 @@ margin-right: 20px;
 
 .categories button{
     width: 180px;
-    padding: 20px;
+    padding: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -102,10 +109,17 @@ margin-right: 20px;
 .next{
     position: absolute;
     top: 100%;
-    left: 78%;
+    left: 84%;
+    transform: translateX(-50%);
     margin-top: 20px;
-    padding: 5px;
-
+    height: 40px;
+    width: 140px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /*back button*/
@@ -113,12 +127,16 @@ margin-right: 20px;
 .back{
     width: 70px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+    padding: 5px;
     position: relative;
-    bottom: 80px;
-    left: 20px
+    bottom: 40px;
+    left: 20px;
+    background-color: #454545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
 }
 

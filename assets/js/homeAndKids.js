@@ -51,8 +51,8 @@ function wrongAnswer(){
 let currentQuestionIndex = 0;
 
     let nextQuestion = document.createElement('button');
-    nextQuestion.textContent = "Next Question";
-    nextQuestion.className = "next";
+    nextQuestion.textContent = "NEXT QUESTION";
+    nextQuestion.className = "next ";
     optionList.appendChild(nextQuestion);
 
     function theNextQuestion(){
