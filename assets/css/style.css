@@ -102,10 +102,23 @@ margin-right: 20px;
 .next{
     position: absolute;
     top: 100%;
-    left: 80%;
+    left: 78%;
     margin-top: 20px;
     padding: 5px;
 
 }
 
+/*back button*/
+
+.back{
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    bottom: 80px;
+    left: 20px
+}
 

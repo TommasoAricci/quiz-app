@@ -117,6 +117,8 @@ const quizzes = {  // lista domande
     ]
 }
 
+// DISPLAY QUESTIONS
+
 function displayQuestions(category){ // collegamento ad elementi html
     
     currentCategory = category;
@@ -127,6 +129,21 @@ function displayQuestions(category){ // collegamento ad elementi html
     previousOptions.forEach(option => {
         option.remove();
     });
+
+// pulsante back
+
+let buttonDiv = document.querySelector('.backButtonDiv');
+
+    let backButton = document.querySelector('.back');
+        backButton.addEventListener('click', function() {
+            quizHome.style.display = 'block';
+            questionCont.style.display = 'none';
+        });
+
+        backButton.style.display = 'block';
+
+
+// pulsanti opzioni
 
   questionText.textContent = activeQuiz[currentQuestionIndex].question;
     for (let i = 0; i < activeQuiz[currentQuestionIndex].options.length; i++) {
