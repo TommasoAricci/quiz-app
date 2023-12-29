@@ -16,6 +16,8 @@ const questionCont = document.querySelector('.question-container');
 
 const buttonHome = document.querySelectorAll('.buttonCategory');
 
+logo = document.querySelector('.logo');
+
 // HIDE HOME
 
 buttonHome.forEach(button => {
@@ -138,6 +140,7 @@ let buttonDiv = document.querySelector('.backButtonDiv');
         backButton.addEventListener('click', function() {
             quizHome.style.display = 'block';
             questionCont.style.display = 'none';
+            logo.style.display = 'block';
         });
 
         backButton.style.display = 'block';
@@ -154,6 +157,8 @@ let buttonDiv = document.querySelector('.backButtonDiv');
         optionList.appendChild(option);
     }
     optionButton = document.querySelectorAll('.option');
+
+    if(logo) logo.style.display = 'none';
 }
 
 // VERIFICA RISPOSTA
