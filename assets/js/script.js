@@ -164,6 +164,11 @@ let checked = this.textContent;
 
 function missingIngredients(category){
 
+    let answer = document.querySelectorAll('.answer');
+    answer.forEach(answer => {                             // eliminazione answer inizio domanda
+        answer.parentNode.removeChild(answer);
+    });
+
     let buttonDiv = document.querySelector('.backButtonDiv');
     let backButton = document.querySelector('.back');
         backButton.addEventListener('click', function() {
