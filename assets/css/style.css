@@ -60,7 +60,7 @@ h2{
 }
 
 .categories button{
-    width: 180px;
+    width: 250px;
     padding: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -104,6 +104,8 @@ h2{
     border: none;
     cursor: pointer;
     border: 1px solid black;
+
+    font-size: 14px;
 }
 
 .answer{
@@ -149,3 +151,14 @@ h2{
     font-weight: 500;
 }
 
+/* input */
+
+.input{
+    padding: 10px
+}
+
+.check{
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
