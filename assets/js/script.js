@@ -71,8 +71,14 @@ function theNextQuestion(){
     optionClicked = false;
 
     currentQuestionIndex++;
+
+    if(currentCategory === "missing"){
+        
+    }
+    
     if (currentQuestionIndex < quizzes[currentCategory].length){
         questionText.textContent = quizzes[currentCategory][currentQuestionIndex].question;  // visualizza prossima domanda
+        
         for (let i = 0; i < optionButton.length; i++){
             optionButton[i].textContent = quizzes[currentCategory][currentQuestionIndex].options[i]; // Aggiorna le opzioni
             optionButton[i].style.backgroundColor = ""; // Resettare lo stile dei pulsanti
@@ -81,6 +87,12 @@ function theNextQuestion(){
     } else currentQuestionIndex = 0;
 
     if(answer) optionList.removeChild(answer);
+
+    
+
+    optionButton.forEach(button => {
+        button.style.color = ""; 
+      });
 }
 
 nextQuestion.addEventListener('click', theNextQuestion);
@@ -146,15 +158,20 @@ optionClicked = true;
 let checked = this.textContent;
     if (checked === activeQuiz[currentQuestionIndex].answer){
         this.style.backgroundColor = "lightgreen";
+        this.style.color = "white";
         rightAnswer();                                              // risposta giusta
         optionButton.forEach(button => {
             if(button.textContent !== checked) button.removeEventListener('click', checkAnswer);
         }
     )} else {
         this.style.backgroundColor = "red";
+        this.style.color = "white";
         wrongAnswer();                                                  // risposta sbagliata
         optionButton.forEach(button => {
-            if(button.textContent === activeQuiz[currentQuestionIndex].answer) button.style.backgroundColor = "lightgreen";
+            if(button.textContent === activeQuiz[currentQuestionIndex].answer) {
+                button.style.backgroundColor = "lightgreen";
+                button.style.color = "white";
+            }
             button.removeEventListener('click', checkAnswer);
         })
     }
@@ -163,7 +180,7 @@ let checked = this.textContent;
 // PROVA INPUT
 
 function missingIngredients(category){
-
+    
     let answer = document.querySelectorAll('.answer');
     answer.forEach(answer => {                             // eliminazione answer inizio domanda
         answer.parentNode.removeChild(answer);
@@ -206,6 +223,7 @@ function missingIngredients(category){
     // controllo risposta
 
     check.addEventListener('click', function() {
+
         const userAnswer = input.value.toLowerCase(); 
     
         const correctAnswers = missingQuiz[currentCategory][currentQuestionIndex].answer;
@@ -217,12 +235,20 @@ function missingIngredients(category){
                 break;
             }
         }
+
+        let answer = document.querySelectorAll('.answer');
     
         if (isCorrect) {
             rightAnswer();
-        } else {
+            input.style.backgroundColor = "lightgreen";
+            input.style.color = "white";
+            checkChecked = true;
+        } else if (!isCorrect) {
             wrongAnswer();
+            input.style.backgroundColor = "red";
+            input.style.color = "white";
         }
+
     });
 }
 
@@ -334,7 +360,13 @@ const missingQuiz = {
     missing: [
         {
             category: "missing",
-            question: "Zendaye: 2 bacon, grilled tomato, egg, relish, 2 toast",
+            question: "Zendaye has 2 bacon, grilled tomato, egg, relish, 2 toast and?",
+            options: ["Cheese", "Grilled Mushrooms", "2 Hashbrown", "2 Sausages"],
+            answer : ["2 Sausages", "sausages",]
+        },
+        {
+            category: "missing",
+            question: "Zendaye has three bacon, grilled tomato, egg, relish, 2 toast and?",
             options: ["Cheese", "Grilled Mushrooms", "2 Hashbrown", "2 Sausages"],
             answer : ["2 Sausages", "sausages",]
         }
