@@ -17,6 +17,7 @@ body{
     background-position: bottom;
     position: relative;
     font-family: sans-serif;
+    color: black;
 }
 
 .choosing{
@@ -165,4 +166,29 @@ h2{
     margin-top: 20px;
     padding: 10px;
     border-radius: 5px;
+}
+
+/*score*/
+
+.scoreDisplay{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scoreText{
+    font-size: 20px;
+    text-align: center;
+}
+
+.motivationText{
+    color: lightgreen;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
