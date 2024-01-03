@@ -84,15 +84,13 @@ let currentQuestionIndex = 0;
                 optionButton[i].textContent = quizzes[currentCategory][currentQuestionIndex].options[i]; // Aggiorna le opzioni
                 optionButton[i].style.backgroundColor = "";                 // Resettare il colore
                 optionButton[i].addEventListener('click', checkAnswer);
-            }} else if (currentQuestionIndex === quizzes[currentCategory].length){    // se ultima domanda, visualizza punteggio
+            }} else if (currentQuestionIndex === quizzes[currentCategory].length)  // se ultima domanda, visualizza punteggio
                 showScore();
-                nextQuestion.textContent = "FINISH";
-            }
+            else if (currentQuestionIndex === quizzes[currentCategory].length -1) nextQuestion.textContent = "FINISH";
+
          else currentQuestionIndex = 0;
         
-    
         if(answer) optionList.removeChild(answer);       // elimina wrong o correct per la prossima domanda
-
     
         optionButton.forEach(button => {
             button.style.color = "";  
@@ -184,13 +182,15 @@ function checkAnswer() {
         wrongAnswer();                      // Funzione per la risposta sbagliata
     }
 
-    optionButtons.forEach(button => {               // Rimozione degli eventi click dopo la risposta
-        if (button.textContent) {
-            button.removeEventListener('click', checkAnswer);
-        } else if (button.textContent === correctAnswer) {
-            button.style.backgroundColor = "lightgreen";
+    optionButtons.forEach(button => {               
+        if (button.textContent === correctAnswer) {
+            button.style.backgroundColor = "lightgreen";        // risposta corretta anche se scelgo quella sbagliata
             button.style.color = "white";
         }
+    });
+
+    optionButtons.forEach(button => {
+        button.removeEventListener('click', checkAnswer);        //// Rimozione degli eventi click dopo la risposta
     });
 }
 
@@ -355,7 +355,7 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "Is the garnish served in the kids meals?",
-            options: ["Yes", "No"],
+            options: ["Yes", "No", "Yes except the sweets", "It's up to me"],
             answer: "No"
         }
     ],
@@ -375,15 +375,27 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "In what meal two hashbrowns are not served?",
-            options: ["Jim Haw", "Test Match", "Emirates", "Zinzan"],
-            answer: "Emirates"
+            question: "In what meal sausages are not served?",
+            options: ["Winx", "Zendaye", "Jim Hawkins", "Tony"],
+            answer: "Jim Hawkins"
         },
         {
             category: "breakfast",
-            question: "What's the mi",
-            options: ["Jim Haw", "Test Match", "Emirates", "Zinzan"],
-            answer: "Emirates"
+            question: "What meal is: 2 bacon, 2 eggs, 2 toast, 2 hashbrowns?",
+            options: ["Farmer", "Kiwi", "ET", "Zinzan"],
+            answer: "Zinzan"
+        },
+        {
+            category: "breakfast",
+            question: "How many hashbrown in these meals? Zinzan, Test Match, Gateway, Zendaye",
+            options: ["4", "6", "2", "8"],
+            answer: "6"
+        },
+        {
+            category: "breakfast",
+            question: "In what meal 2 eggs are not served?",
+            options: ["Gilbert", "Test Match", "Endeavour", "Peachy"],
+            answer: "Peachy"
         }
 
     ],
