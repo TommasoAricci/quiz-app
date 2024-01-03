@@ -145,11 +145,14 @@ function displayQuestions(category){ // collegamento ad elementi html
 
 // pulsanti opzioni
 
+    let options = activeQuiz[currentQuestionIndex].options.slice();             // variabile per opzioni random (slice è per creare una copia senza influenzare l'originale)
+    options.sort(() => Math.random() - 0.5);
+
     questionText.textContent = activeQuiz[currentQuestionIndex].question;
 
     for (let i = 0; i < activeQuiz[currentQuestionIndex].options.length; i++) {
         let option = document.createElement('button');
-        option.textContent = activeQuiz[currentQuestionIndex].options[i];
+        option.textContent = options[i];
         option.className = 'option';                                            // assegnazione domanda e risposte
         optionList.appendChild(option);
 
@@ -229,86 +232,6 @@ function showScore (){
     console.log("punteggio: " + score);
 }
 
-
-
-/* PROVA INPUT
-
-function missingIngredients(category){
-    
-    let answer = document.querySelectorAll('.answer');
-    answer.forEach(answer => {                             // eliminazione answer inizio domanda
-        answer.parentNode.removeChild(answer);
-    });
-
-    let buttonDiv = document.querySelector('.backButtonDiv');
-    let backButton = document.querySelector('.back');
-        backButton.addEventListener('click', function() {
-            quizHome.style.display = 'block';                      // pulsante back
-            questionCont.style.display = 'none';
-            logo.style.display = 'block';
-            input.remove();
-            check.remove();
-        });
-        backButton.style.display = 'block';
-
-        // rimozione pulsanti
-
-    currentCategory = category;
-
-    let previousOptions = document.querySelectorAll('.option');
-    previousOptions.forEach(option => {
-        option.remove();
-    });
-
-    // creazione input e invio
-    
-    questionText.textContent = missingQuiz[currentCategory][currentQuestionIndex].question;
-    let input = document.createElement('input');
-    input.type = 'text';
-    input.className = 'input';
-    input.placeholder = 'Type here';
-    optionList.appendChild(input);
-
-    let check = document.createElement('button');
-    check.textContent = 'Check';
-    check.className = 'check';
-    optionList.appendChild(check);
-
-    // controllo risposta
-
-    check.addEventListener('click', function() {
-
-        const userAnswer = input.value.toLowerCase(); 
-    
-        const correctAnswers = missingQuiz[currentCategory][currentQuestionIndex].answer;
-        let isCorrect = false;
-    
-        for (let i = 0; i < correctAnswers.length; i++) {
-            if (userAnswer === correctAnswers[i].toLowerCase()) {
-                isCorrect = true;
-                break;
-            }
-        }
-
-        let answer = document.querySelectorAll('.answer');
-    
-        if (isCorrect) {
-            rightAnswer();
-            input.style.backgroundColor = "lightgreen";
-            input.style.color = "white";
-            checkChecked = true;
-        } else if (!isCorrect) {
-            wrongAnswer();
-            input.style.backgroundColor = "red";
-            input.style.color = "white";
-        }
-
-    });
-}
-
-*/
-
-
 // CHIAMATA FUNZIONI A CATEGORIE
 
 kids.addEventListener('click', function(){ // collegamento pulsante "kids" alle domande
@@ -387,15 +310,15 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "How many hashbrown in these meals? Zinzan, Test Match, Gateway, Zendaye",
+            question: "How many hashbrown in total between Zinzan, Test Match, Gateway, Zendaye?",
             options: ["4", "6", "2", "8"],
             answer: "6"
         },
         {
             category: "breakfast",
             question: "In what meal 2 eggs are not served?",
-            options: ["Gilbert", "Test Match", "Endeavour", "Peachy"],
-            answer: "Peachy"
+            options: ["Gilbert", "Test Match", "Endeavour", "Emirates"],
+            answer: "Emirates"
         }
 
     ],
@@ -406,6 +329,12 @@ const quizzes = {  // lista domande
             question: "In what meals creamy mushrooms are not served?",
             options: ["Hillary", "Highfields", "HammerThrow", "King Charles"],
             answer : "King Charles"
+        },
+        {
+            category: "steaks",
+            question: "What's the difference between Bradman and Warney?",
+            options: ["Bradman has bacon, Warney has prawns","Bradman has prawns, Warney has bacon", "Bradman comes with additional creamy mushrooms", "Warney has salad, Bradman hasn't"],
+            answer : "Bradman has prawns, Warney has bacon"
         }
     ],
 
@@ -427,7 +356,19 @@ const quizzes = {  // lista domande
             "Buns, mayo, green leaves, tomato, fried chicken, cheese",
             "Buns, mayo, green leaves, tomato, beef patty, cheese, bacon, hashbrown"],
             answer : "Buns, mayo, green leaves, tomato, beef patty, cheese, bacon, hashbrown"
-        }
+        },
+        {
+            category: "burgers",
+            question: "How many handful of fries between Southern Cross, Jack, Peggy and BBBB?",
+            options: ["1","2","3","4"],
+            answer : "2"
+        },
+        {
+            category: "burgers",
+            question: "What are the same ingredient used for Ross an Monroe?",
+            options: ["Mayo, leaves, tomato, rib fillet 100g, grilled onion","Leaves, tomato, rib fillet 100g, grilled onion", "Buns, leaves, tomato, rib fillet 100g, bacon", "Buns, leaves, tomato, rib fillet 100g, bacon, grilled onion"],
+            answer : "Leaves, tomato, rib fillet 100g, grilled onion"
+        },
     ]
     
 }

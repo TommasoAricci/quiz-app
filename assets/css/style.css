@@ -138,7 +138,7 @@ h2{
 /*back button*/
 
 .back{
-    width: 70px;
+    width: 40px;
     height: 40px;
     cursor: pointer;
     padding: 5px;
@@ -167,7 +167,7 @@ h2{
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
