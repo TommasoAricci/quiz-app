@@ -77,21 +77,25 @@ let currentQuestionIndex = 0;
     
         currentQuestionIndex++;
     
-            if(currentQuestionIndex < quizzes[currentCategory].length){
-            questionText.textContent = quizzes[currentCategory][currentQuestionIndex].question;  // visualizza prossima domanda
-            
-            let options = quizzes[currentCategory][currentQuestionIndex].options.slice();       // opzioni random per ogni domanda successiva
-            options.sort(() => Math.random() - 0.5);
+        if(currentQuestionIndex < quizzes[currentCategory].length){
+        questionText.textContent = quizzes[currentCategory][currentQuestionIndex].question;  // visualizza prossima domanda
+        
+        let options = quizzes[currentCategory][currentQuestionIndex].options.slice();       // opzioni random per ogni domanda successiva
+        options.sort(() => Math.random() - 0.5);
 
-            for (let i = 0; i < optionButton.length; i++){
-                optionButton[i].textContent = options[i]; // Aggiorna le opzioni
-                optionButton[i].style.backgroundColor = "";                 // Resettare il colore
-                optionButton[i].addEventListener('click', checkAnswer);
-            }} else if (currentQuestionIndex === quizzes[currentCategory].length)  // se ultima domanda, visualizza punteggio
-                showScore();
-            else if (currentQuestionIndex === quizzes[currentCategory].length -1) nextQuestion.textContent = "FINISH";
+        let currentQuestionNumber = currentQuestionIndex + 1;
+        let questionNumber = document.getElementById("questionNumber");
+        questionNumber.textContent = currentQuestionNumber + "/" + quizzes[currentCategory].length;   // aggiornamento numero domnda per domanda successiva
 
-         else currentQuestionIndex = 0;
+        for (let i = 0; i < optionButton.length; i++){
+            optionButton[i].textContent = options[i]; // Aggiorna le opzioni
+            optionButton[i].style.backgroundColor = "";                 // Resettare il colore
+            optionButton[i].addEventListener('click', checkAnswer);
+        }} else if (currentQuestionIndex === quizzes[currentCategory].length)  // se ultima domanda, visualizza punteggio
+            showScore();
+        else if (currentQuestionIndex === quizzes[currentCategory].length -1) nextQuestion.textContent = "FINISH";
+
+        else currentQuestionIndex = 0;
         
         if(answer) optionList.removeChild(answer);       // elimina wrong o correct per la prossima domanda
     
@@ -164,6 +168,14 @@ function displayQuestions(category){ // collegamento ad elementi html
 
     optionButton = document.querySelectorAll('.option');
     if(logo) logo.style.display = 'none';
+
+    // numero domande
+
+    let questionNumber = document.getElementById("questionNumber")
+    let currentQuestionNumber = currentQuestionIndex + 1;
+
+    questionNumber.style.display = "block";
+    questionNumber.textContent = currentQuestionNumber + "/" + quizzes[currentCategory].length;
 }
 
 // CHECK ANSWER
@@ -246,11 +258,6 @@ kids.addEventListener('click', function(){ // collegamento pulsante "kids" alle 
     displayQuestions("kids");
 })
 
-breakfast.addEventListener('click', function(){
-    currentQuestionIndex = 0
-    displayQuestions("breakfast");
-})
-
 steaks.addEventListener('click', function(){
     currentQuestionIndex = 0
     displayQuestions("steaks");
@@ -299,49 +306,44 @@ const quizzes = {  // lista domande
             question: "How many nuggests in total between Poseidon, The Welcome Stranger, Dorothy and Scarecrow?",
             options: ["10", "15", "5", "20"],
             answer: "15"
-        }
-    ],
-
-    breakfast: [
+        },
         {
-            category: "breakfast",
+            category: "kids",
             question: "What's the difference between Val and Farmer?",
             options: ["Val has only two toast more than Farmer", "Val has one bacon and one toast, Farmer two bacon and two toast", "Val comes with fried egg, Farmer with poached eggs", "Val has two bacon, Farmer only one"],
             answer: "Val has one bacon and one toast, Farmer two bacon and two toast"
         },
         {
-            category: "breakfast",
+            category: "kids",
             question: "In what meal two hashbrowns are not served?",
             options: ["Jim Hawkins", "Test Match", "Emirates", "Zinzan"],
             answer: "Emirates"
         },
         {
-            category: "breakfast",
+            category: "kids",
             question: "In what meal sausages are not served?",
             options: ["Winx", "Zendaye", "Jim Hawkins", "Tony"],
             answer: "Jim Hawkins"
         },
         {
-            category: "breakfast",
+            category: "kids",
             question: "What meal is: 2 bacon, 2 eggs, 2 toast, 2 hashbrowns?",
             options: ["Farmer", "Kiwi", "ET", "Zinzan"],
             answer: "Zinzan"
         },
         {
-            category: "breakfast",
+            category: "kids",
             question: "How many hashbrown in total between Zinzan, Test Match, Gateway, Zendaye?",
             options: ["4", "6", "2", "8"],
             answer: "6"
         },
         {
-            category: "breakfast",
+            category: "kids",
             question: "In what meal 2 eggs are not served?",
             options: ["Gilbert", "Test Match", "Endeavour", "Emirates"],
             answer: "Emirates"
         },
-        
-
-    ],
+    ],        
 
     steaks: [
         {
