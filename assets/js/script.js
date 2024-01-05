@@ -80,8 +80,11 @@ let currentQuestionIndex = 0;
             if(currentQuestionIndex < quizzes[currentCategory].length){
             questionText.textContent = quizzes[currentCategory][currentQuestionIndex].question;  // visualizza prossima domanda
             
+            let options = quizzes[currentCategory][currentQuestionIndex].options.slice();       // opzioni random per ogni domanda successiva
+            options.sort(() => Math.random() - 0.5);
+
             for (let i = 0; i < optionButton.length; i++){
-                optionButton[i].textContent = quizzes[currentCategory][currentQuestionIndex].options[i]; // Aggiorna le opzioni
+                optionButton[i].textContent = options[i]; // Aggiorna le opzioni
                 optionButton[i].style.backgroundColor = "";                 // Resettare il colore
                 optionButton[i].addEventListener('click', checkAnswer);
             }} else if (currentQuestionIndex === quizzes[currentCategory].length)  // se ultima domanda, visualizza punteggio
@@ -130,11 +133,11 @@ function displayQuestions(category){ // collegamento ad elementi html
             let scoreDisplay = document.querySelector('.scoreDisplay');
 
             if(scoreText) scoreDisplay.removeChild(scoreText);
-            if(motivationText) scoreDisplay.removeChild(motivationText);        // rimuovere elementi punteggio
+            if(motivationText) scoreDisplay.removeChild(motivationText);        // rimuovere elementi punteggio da home
 
             score = 0;
             quizHome.style.display = 'block';
-            questionCont.style.display = 'none';
+            questionCont.style.display = 'none';                    // set display home
             logo.style.display = 'block';
             scoreDisplay.style.display = 'none';
         });
@@ -163,7 +166,7 @@ function displayQuestions(category){ // collegamento ad elementi html
     if(logo) logo.style.display = 'none';
 }
 
-// AL CLIC DELLA RISPOSTA
+// CHECK ANSWER
 
 function checkAnswer() {
     const activeQuiz = quizzes[currentCategory];
@@ -229,6 +232,10 @@ function showScore (){
     questionText.style.display = 'none';
     optionList.style.display = 'none';
 
+    let backButton = document.querySelector('.back');
+
+    backButton.style.bottom = '60px';     // distanza pulsante back da schermata punteggio
+
     console.log("punteggio: " + score);
 }
 
@@ -280,6 +287,18 @@ const quizzes = {  // lista domande
             question: "Is the garnish served in the kids meals?",
             options: ["Yes", "No", "Yes except the sweets", "It's up to me"],
             answer: "No"
+        },
+        {
+            category: "kids",
+            question: "What's the difference between Hogan's Heroes and Woody?",
+            options: ["Hogan's comes with beef patty, Woody with fried chicken", "Hogan's comes with chicken breast, Woody with beef patty", "Hogan's comes with fried chicken, Woddy with beef patty", "Hogan's comes with fries, Woody doesn't"],
+            answer: "Hogan's comes with chicken breast, Woody with beef patty"
+        },
+        {
+            category: "kids",
+            question: "How many nuggests in total between Poseidon, The Welcome Stranger, Dorothy and Scarecrow?",
+            options: ["10", "15", "5", "20"],
+            answer: "15"
         }
     ],
 
@@ -319,7 +338,8 @@ const quizzes = {  // lista domande
             question: "In what meal 2 eggs are not served?",
             options: ["Gilbert", "Test Match", "Endeavour", "Emirates"],
             answer: "Emirates"
-        }
+        },
+        
 
     ],
 
