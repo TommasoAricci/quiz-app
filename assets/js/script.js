@@ -7,6 +7,7 @@ const steaks = document.getElementById('steaks');
 const pasta = document.getElementById('pasta');
 const burgers = document.getElementById('burgers');
 const missing = document.getElementById('missing');
+const guess = document.getElementById('guess');
 
 let quizHome = document.querySelector('.quiz-home');
 
@@ -60,49 +61,60 @@ function wrongAnswer(){
 
 let currentQuestionIndex = 0;
 
-    let nextQuestion = document.createElement('button');
-    nextQuestion.textContent = "NEXT";
-    nextQuestion.className = "next ";                   // creazione pulsante
-    optionList.appendChild(nextQuestion);
+let nextQuestion = document.createElement('button');
+nextQuestion.textContent = "NEXT";
+nextQuestion.className = "next ";                   // creazione pulsante
+optionList.appendChild(nextQuestion);
 
-    function theNextQuestion(){
+function theNextQuestion(){
 
-        let answer = document.querySelector('.answer');
+    let answer = document.querySelector('.answer');
+
+    if(optionClicked === false){                    // Se l'utente non ha cliccato nessuna opzione, non passa alla domanda successiva
+        alert('Please select an option!');
+        return;
+    }
+    optionClicked = false;
+
+    currentQuestionIndex++;
+
+    if(currentQuestionIndex < quizzes[currentCategory].length){
+    questionText.textContent = quizzes[currentCategory][currentQuestionIndex].question;  // visualizza prossima domanda
     
-        if(optionClicked === false){                    // Se l'utente non ha cliccato nessuna opzione, non passa alla domanda successiva
-            alert('Please select an option!');
-            return;
-        }
-        optionClicked = false;
+    let options = quizzes[currentCategory][currentQuestionIndex].options.slice();       // opzioni random per ogni domanda successiva
+    options.sort(() => Math.random() - 0.5);
+
+    let currentQuestionNumber = currentQuestionIndex + 1;
+    let questionNumber = document.getElementById("questionNumber");
+    questionNumber.textContent = currentQuestionNumber + "/" + quizzes[currentCategory].length;   // aggiornamento numero domnda per domanda successiva
+
+    for (let i = 0; i < optionButton.length; i++){
+        optionButton[i].textContent = options[i]; // Aggiorna le opzioni
+        optionButton[i].style.backgroundColor = "";                 // Resettare il colore
+        optionButton[i].addEventListener('click', checkAnswer);
+    }} else if (currentQuestionIndex === quizzes[currentCategory].length)  // se ultima domanda, visualizza punteggio
+        showScore();
+    else if (currentQuestionIndex === quizzes[currentCategory].length -1) nextQuestion.textContent = "FINISH";
+    else currentQuestionIndex = 0;
     
-        currentQuestionIndex++;
-    
-        if(currentQuestionIndex < quizzes[currentCategory].length){
-        questionText.textContent = quizzes[currentCategory][currentQuestionIndex].question;  // visualizza prossima domanda
+    if(answer) optionList.removeChild(answer);       // elimina wrong o correct per la prossima domanda
+
+    optionButton.forEach(button => {
+        button.style.color = "";  
+        });
+
+
         
-        let options = quizzes[currentCategory][currentQuestionIndex].options.slice();       // opzioni random per ogni domanda successiva
-        options.sort(() => Math.random() - 0.5);
+        const currentImage = document.querySelector('.question-image');
 
-        let currentQuestionNumber = currentQuestionIndex + 1;
-        let questionNumber = document.getElementById("questionNumber");
-        questionNumber.textContent = currentQuestionNumber + "/" + quizzes[currentCategory].length;   // aggiornamento numero domnda per domanda successiva
-
-        for (let i = 0; i < optionButton.length; i++){
-            optionButton[i].textContent = options[i]; // Aggiorna le opzioni
-            optionButton[i].style.backgroundColor = "";                 // Resettare il colore
-            optionButton[i].addEventListener('click', checkAnswer);
-        }} else if (currentQuestionIndex === quizzes[currentCategory].length)  // se ultima domanda, visualizza punteggio
-            showScore();
-        else if (currentQuestionIndex === quizzes[currentCategory].length -1) nextQuestion.textContent = "FINISH";
-
-        else currentQuestionIndex = 0;
-        
-        if(answer) optionList.removeChild(answer);       // elimina wrong o correct per la prossima domanda
-    
-        optionButton.forEach(button => {
-            button.style.color = "";  
-          });
+        if(currentImage){
+            currentImage.parentNode.removeChild(currentImage);
+            guessTheMeal();
         }
+      
+
+
+    }
 
 nextQuestion.addEventListener('click', theNextQuestion);
 
@@ -144,6 +156,16 @@ function displayQuestions(category){ // collegamento ad elementi html
             questionCont.style.display = 'none';                    // set display home
             logo.style.display = 'block';
             scoreDisplay.style.display = 'none';
+
+            let imageContainer = document.querySelector('.question-image');
+            if(imageContainer) document.body.removeChild(imageContainer);              // rimuovere img quando clicco back
+
+            questionCont.style.top = ('45%');
+
+            questionNumber.style.position = ('static');                 // riporto numero posizione originale
+            questionNumber.style.transform = ('translate(0%)');
+
+
         });
 
         backButton.style.display = 'block';
@@ -218,6 +240,9 @@ function showScore (){
 
     scoreDisplay.style.display = 'block';     // visualizzazione punteggio
 
+    questionNumber.style.display = "none";
+
+
     const totalQuestions = quizzes[currentCategory].length;
     const currentPoints = score;
     scorePercentage = Math.round((currentPoints/totalQuestions)*100);
@@ -246,9 +271,36 @@ function showScore (){
 
     let backButton = document.querySelector('.back');
 
-    backButton.style.bottom = '60px';     // distanza pulsante back da schermata punteggio
+    backButton.style.bottom = '30px';     // distanza pulsante back da schermata punteggio
 
     console.log("punteggio: " + score);
+
+    let imageContainer = document.querySelector('.question-image');
+    if(imageContainer) document.body.removeChild(imageContainer);        // rimuovere img dal punteggio
+
+    questionCont.style.top = ('45%');     // ritorno alla posizione originale
+}
+
+// GUESS THE MEAL
+
+function guessTheMeal(){
+
+    const activeQuiz = quizzes[currentCategory];
+
+    let imageContainer = document.createElement('img');
+    imageContainer.src = activeQuiz[currentQuestionIndex].image;
+    imageContainer.className = 'question-image';
+    document.body.appendChild(imageContainer);
+
+    questionCont.style.top = ('60%');
+
+    if (imageContainer){
+        questionNumber.style.position = ('absolute');
+        questionNumber.style.top = ('-250px');
+        questionNumber.style.left = ('50%');
+        questionNumber.style.transform = ('translate(-50%)');
+    }
+
 }
 
 // CHIAMATA FUNZIONI A CATEGORIE
@@ -256,6 +308,11 @@ function showScore (){
 kids.addEventListener('click', function(){ // collegamento pulsante "kids" alle domande
     currentQuestionIndex = 0 
     displayQuestions("kids");
+})
+
+breakfast.addEventListener('click', function(){
+    currentQuestionIndex = 0
+    displayQuestions("breakfast");
 })
 
 steaks.addEventListener('click', function(){
@@ -271,6 +328,12 @@ pasta.addEventListener('click', function(){
 burgers.addEventListener('click', function(){
     currentQuestionIndex = 0
     displayQuestions("burgers");
+})
+
+guess.addEventListener('click', function(){
+    currentQuestionIndex = 0
+    displayQuestions("guess");
+    guessTheMeal();
 })
 
 // QUIZ QUESTIONS
@@ -307,43 +370,46 @@ const quizzes = {  // lista domande
             options: ["10", "15", "5", "20"],
             answer: "15"
         },
-        {
-            category: "kids",
+    ],
+    
+    breakfast: [
+{
+    category: "breakfast",
             question: "What's the difference between Val and Farmer?",
             options: ["Val has only two toast more than Farmer", "Val has one bacon and one toast, Farmer two bacon and two toast", "Val comes with fried egg, Farmer with poached eggs", "Val has two bacon, Farmer only one"],
             answer: "Val has one bacon and one toast, Farmer two bacon and two toast"
         },
         {
-            category: "kids",
+            category: "breakfast",
             question: "In what meal two hashbrowns are not served?",
             options: ["Jim Hawkins", "Test Match", "Emirates", "Zinzan"],
             answer: "Emirates"
         },
         {
-            category: "kids",
+            category: "breakfast",
             question: "In what meal sausages are not served?",
             options: ["Winx", "Zendaye", "Jim Hawkins", "Tony"],
             answer: "Jim Hawkins"
         },
         {
-            category: "kids",
+            category: "breakfast",
             question: "What meal is: 2 bacon, 2 eggs, 2 toast, 2 hashbrowns?",
             options: ["Farmer", "Kiwi", "ET", "Zinzan"],
             answer: "Zinzan"
         },
         {
-            category: "kids",
+            category: "breakfast",
             question: "How many hashbrown in total between Zinzan, Test Match, Gateway, Zendaye?",
             options: ["4", "6", "2", "8"],
             answer: "6"
         },
         {
-            category: "kids",
+            category: "breakfast",
             question: "In what meal 2 eggs are not served?",
             options: ["Gilbert", "Test Match", "Endeavour", "Emirates"],
             answer: "Emirates"
         },
-    ],        
+    ],
 
     steaks: [
         {
@@ -391,6 +457,40 @@ const quizzes = {  // lista domande
             options: ["Mayo, leaves, tomato, rib fillet 100g, grilled onion","Leaves, tomato, rib fillet 100g, grilled onion", "Buns, leaves, tomato, rib fillet 100g, bacon", "Buns, leaves, tomato, rib fillet 100g, bacon, grilled onion"],
             answer : "Leaves, tomato, rib fillet 100g, grilled onion"
         },
+    ],
+
+    guess: [
+
+        {
+            category: "guess",
+            questionGuess: "What's the meal?",
+            options: ["Zest", "Tinker Bell"],
+            answer : "Tinker Bell",
+            image: "assets/img/different/Tinker.jpeg"
+        },
+
+        {
+            category: "guess",
+            options: ["Zendaye","Winx"],
+            answer : "Winx",
+            image: "assets/img/different/Winx.jpeg"
+        },
+
+        {
+            category: "guess",
+            options: ["Disco Ball","Emirates"],
+            answer : "Emirates",
+            image: "assets/img/different/Emirates.jpeg"
+        },
+
+        {
+            category: "guess",
+            options: ["Disco Ball","Emirates"],
+            answer : "Emirates",
+            image: "assets/img/Nicole.jpeg"
+        }
+
+
     ]
     
 }
@@ -411,4 +511,9 @@ const quizzes = {  // lista domande
             answer : ["2 Sausages", "sausages",]
         }
     ]
-}  */
+}  */ 
+
+
+
+
+// spostare numero domanda sopra su guess, modificare dimensione foto

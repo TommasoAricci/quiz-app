@@ -141,7 +141,7 @@ h2{
     cursor: pointer;
     padding: 5px;
     position: relative;
-    bottom: 40px;
+    bottom: 10px;
     left: 20px;
     background-color: #454545;
     color: white;
@@ -185,6 +185,23 @@ h2{
     font-size: 30px;
     margin-bottom: 10px;
 }
+
+#questionNumber{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* img*/
+
+.question-image{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 250px;
+    border-radius: 5px;
+}
+
 
 /*media queries*/
 
