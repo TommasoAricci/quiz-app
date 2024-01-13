@@ -198,6 +198,11 @@ function displayQuestions(category){ // collegamento ad elementi html
 
     questionNumber.style.display = "block";
     questionNumber.textContent = currentQuestionNumber + "/" + quizzes[currentCategory].length;
+
+    // dimensione back
+
+    backButton.style.top = ('0px');
+
 }
 
 // CHECK ANSWER
@@ -294,12 +299,16 @@ function guessTheMeal(){
 
     questionCont.style.top = ('60%');
 
+    let backButton = document.querySelector('.back');
+
     if (imageContainer){
         questionNumber.style.position = ('absolute');
-        questionNumber.style.top = ('-250px');
+        questionNumber.style.top = ('-230px');
         questionNumber.style.left = ('50%');
         questionNumber.style.transform = ('translate(-50%)');
+        backButton.style.top = ('-280px');
     }
+
 
 }
 
@@ -466,29 +475,110 @@ const quizzes = {  // lista domande
             questionGuess: "What's the meal?",
             options: ["Zest", "Tinker Bell"],
             answer : "Tinker Bell",
-            image: "assets/img/different/Tinker.jpeg"
+            image: "assets/img/Tinker.jpeg"
         },
-
         {
             category: "guess",
             options: ["Zendaye","Winx"],
             answer : "Winx",
-            image: "assets/img/different/Winx.jpeg"
+            image: "assets/img/Winx.jpeg"
         },
-
         {
             category: "guess",
             options: ["Disco Ball","Emirates"],
             answer : "Emirates",
-            image: "assets/img/different/Emirates.jpeg"
+            image: "assets/img/Emirates.jpeg"
         },
-
         {
             category: "guess",
-            options: ["Disco Ball","Emirates"],
-            answer : "Emirates",
+            options: ["Nicole","Fotis"],
+            answer : "Nicole",
             image: "assets/img/Nicole.jpeg"
-        }
+        },
+        {
+            category: "guess",
+            options: ["Ashes","Tuber"],
+            answer : "Ashes",
+            image: "assets/img/Ashes.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Merino","Test Match"],
+            answer : "Merino",
+            image: "assets/img/Merino.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["ACDC","Red Devon"],
+            answer : "ACDC",
+            image: "assets/img/ACDC.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Michael Schumacher","Alisha"],
+            answer : "Michael Schumacher",
+            image: "assets/img/Michael.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Stirling Moss","Mountie"],
+            answer : "Mountie",
+            image: "assets/img/Mountie.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Ross","Ottoman"],
+            answer : "Ottoman",
+            image: "assets/img/Ottoman.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Poutine","Sound of Music"],
+            answer : "Poutine",
+            image: "assets/img/Poutine.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Ripper","Orange Progress"],
+            answer : "Ripper",
+            image: "assets/img/Ripper.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Police","Snow White"],
+            answer : "Snow",
+            image: "assets/img/Snow.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Super Brat","Cathy Freeman"],
+            answer : "Super Brat",
+            image: "assets/img/SuperBrat.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Wimbledon","Ozzy Open"],
+            answer : "Wimbledon",
+            image: "assets/img/Wimbledon.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Zendaye","Zinzan"],
+            answer : "Zendaye",
+            image: "assets/img/Zendaye.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Arctic","Washer"],
+            answer : "Arctic",
+            image: "assets/img/Arctic.jpeg"
+        },
+        {
+            category: "guess",
+            options: ["Disco Ball","Benny Fit"],
+            answer : "Disco Ball",
+            image: "assets/img/Disco.jpeg"
+        },
 
 
     ]
@@ -516,4 +606,4 @@ const quizzes = {  // lista domande
 
 
 
-// spostare numero domanda sopra su guess, modificare dimensione foto
+// sistemare home e categorie - inserire domande - media queries
