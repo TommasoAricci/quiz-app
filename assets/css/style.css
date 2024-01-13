@@ -37,14 +37,6 @@ h1{
     margin-bottom: 10px;
 }
 
-#questionText{
-    font-size: 27px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
 h2{
     font-size: 20px;
     margin-bottom: 20px;
@@ -84,7 +76,7 @@ h2{
 /*QUESTIONS*/
 
 .question-container{
-    min-width: 400px;
+    min-width: 450px;
     max-width: 500px;
     position: fixed;
     top: 45%;
@@ -92,6 +84,16 @@ h2{
     transform: translate(-50%, -50%);
     text-align: center;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#questionText{
+    width: 90%;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 #option-list{
@@ -153,7 +155,7 @@ h2{
     padding: 5px;
     position: relative;
     bottom: 10px;
-    left: 20px;
+    left: -150px;
     background-color: #454545;
     color: white;
     border: none;
@@ -206,7 +208,7 @@ h2{
 
 .question-image{
     position: absolute;
-    top: 180px;
+    top: -170px;
     left: 50%;
     transform: translate(-50%);
     max-width: 210px;
@@ -267,6 +269,35 @@ h2{
     .logo{
         width: 130px;
         top: 60px;
-    } 
+    }
+} 
+
+/* WIDTH */
+
+@media only screen and (max-width: 360px) {
+
+   .next{
+        left: 80%;
+   }
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .next{
+        left: 80%;
+   }
+
+    #questionText{
+        width: 60%;
+    }
+
+    .back{
+        left: -150px;
+    }
+
+
 
 }
