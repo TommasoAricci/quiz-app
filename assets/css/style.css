@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .logo{
     position: absolute;
     top: 42px;
@@ -12,15 +19,19 @@
 }
 
 body{
-    background-image: url(../img/1.jpg);
-    background-size: 73vh;    
+    background-image: url(../img/4.jpg);
+    background-size: 55vh;  
     background-position: bottom;
     position: relative;
-    font-family: sans-serif;
+    font-family: 'Jost', sans-serif;
+}
+
+.no-background {
+    background-image: none;
 }
 
 .choosing{
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .quiz-home{
@@ -149,14 +160,15 @@ h2{
 /*back button*/
 
 .back{
-    width: 40px;
     height: 40px;
+    width: 70px;
     cursor: pointer;
-    padding: 5px;
-    position: relative;
-    bottom: 10px;
-    left: -150px;
-    background-color: #454545;
+    position: absolute;
+    top: 100%;
+    right: 70%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    background-color:orange;
     color: white;
     border: none;
     border-radius: 5px;
@@ -200,15 +212,17 @@ h2{
 }
 
 #questionNumber{
+    color: green;
     margin-bottom: 20px;
     font-size: 17px;
+    font-weight: 700;
 }
 
 /* img*/
 
 .question-image{
     position: absolute;
-    top: -170px;
+    top: -210px;
     left: 50%;
     transform: translate(-50%);
     max-width: 210px;
@@ -290,12 +304,12 @@ h2{
         left: 80%;
    }
 
+   .back{
+    right: 65%;
+}
+
     #questionText{
         width: 60%;
-    }
-
-    .back{
-        left: -150px;
     }
 
 

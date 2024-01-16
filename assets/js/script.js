@@ -122,7 +122,7 @@ nextQuestion.addEventListener('click', theNextQuestion);
 // DISPLAY QUESTIONS
 
 function displayQuestions(category){ // collegamento ad elementi html
-
+    
     let answer = document.querySelectorAll('.answer');
     answer.forEach(answer => {                             // eliminazione answer inizio domanda
         answer.parentNode.removeChild(answer);
@@ -165,12 +165,23 @@ function displayQuestions(category){ // collegamento ad elementi html
             questionNumber.style.position = ('static');                 // riporto numero posizione originale
             questionNumber.style.transform = ('translate(0%)');
 
+            backButton.style.top = ('100%');                    // riporto back posizione originale
+            backButton.style.right = ('70%');
+
+
+            // ritorno immagine background
+
+            document.body.classList.remove('no-background');
+
+    
+
 
         });
 
         backButton.style.display = 'block';
         questionText.style.display = 'block';
         optionList.style.display = 'block';
+
 
 // pulsanti opzioni
 
@@ -199,10 +210,9 @@ function displayQuestions(category){ // collegamento ad elementi html
     questionNumber.style.display = "block";
     questionNumber.textContent = currentQuestionNumber + "/" + quizzes[currentCategory].length;
 
-    // dimensione back
+    // nascondere immagine background
 
-    backButton.style.top = ('0px');
-
+    document.body.classList.add('no-background');
 }
 
 // CHECK ANSWER
@@ -247,7 +257,6 @@ function showScore (){
 
     questionNumber.style.display = "none";
 
-
     const totalQuestions = quizzes[currentCategory].length;
     const currentPoints = score;
     scorePercentage = Math.round((currentPoints/totalQuestions)*100);
@@ -255,9 +264,11 @@ function showScore (){
     let message = "Your total score is: " + currentPoints + " out of " + totalQuestions;
     message += " (" + scorePercentage + "%)";
 
+    // primo messaggio
+
     const motivationText = document.createElement('p');
     if(scorePercentage < 50){
-        motivationText.textContent = "You need to practice more!";          // primo messaggio
+        motivationText.textContent = "You need to practice more!";
         motivationText.style.color = "red";
     }
     else if(scorePercentage >= 50 && scorePercentage < 100) motivationText.textContent = "Not Bad!";
@@ -265,24 +276,31 @@ function showScore (){
     motivationText.className = "motivationText";
     scoreDisplay.appendChild(motivationText);
 
+    // secondo messaggio
+
     const scoreText = document.createElement('p');
-    scoreText.textContent = message;                     // secondo messaggio
+    scoreText.textContent = message;
     scoreText.className = "scoreText";
     scoreDisplay.appendChild(scoreText);
 
+    // rimozione e modifica elementi
     
     questionText.style.display = 'none';
     optionList.style.display = 'none';
 
     let backButton = document.querySelector('.back');
 
-    backButton.style.bottom = '30px';     // distanza pulsante back da schermata punteggio
+// distanza pulsante back da schermata punteggio
+
+    backButton.style.top = '80px';
+    backButton.style.left = '50%';
+
 
     console.log("punteggio: " + score);
 
     let imageContainer = document.querySelector('.question-image');
-    if(imageContainer) document.body.removeChild(imageContainer);        // rimuovere img dal punteggio
-
+    if(imageContainer) questionCont.removeChild(imageContainer);       // rimuovere img dal punteggio
+    
     questionCont.style.top = ('45%');     // ritorno alla posizione originale
 }
 
@@ -303,12 +321,10 @@ function guessTheMeal(){
 
     if (imageContainer){
         questionNumber.style.position = ('absolute');
-        questionNumber.style.top = ('-230px');
+        questionNumber.style.top = ('-260px');
         questionNumber.style.left = ('50%');
         questionNumber.style.transform = ('translate(-50%)');
-        backButton.style.top = ('-280px');
     }
-
 
 }
 
@@ -344,3 +360,7 @@ guess.addEventListener('click', function(){
     displayQuestions("guess");
     guessTheMeal();
 })
+
+// cercare di sistemare posizione back sul punteggio di guess, non incasinare tutto
+
+// SISTEMARE DOMANDE CHE HO NASCOSTO!!!

@@ -249,7 +249,7 @@ const quizzes = {  // lista domande
         {
             category: "guess",
             options: ["Police","Snow White"],
-            answer : "Snow",
+            answer : "Snow White",
             image: "assets/img/Snow.jpeg"
         },
         {
