@@ -23,7 +23,7 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "What's the difference between Hogan's Heroes and Woody?",
-            options: ["Hogan's comes with beef patty, Woody with fried chicken", "Hogan's comes with chicken breast, Woody with beef patty", "Hogan's comes with fried chicken, Woddy with beef patty", "Hogan's comes with fries, Woody doesn't"],
+            options: ["Hogan's comes with beef patty, Woody with fried chicken", "Hogan's comes with chicken breast, Woody with beef patty", "Hogan's comes with fried chicken, Woody with beef patty", "Hogan's comes with fries, Woody doesn't"],
             answer: "Hogan's comes with chicken breast, Woody with beef patty"
         },
         {
@@ -59,7 +59,7 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "Lego comes with battered fish, fries, and?",
-            options: ["Nothing else", "Tartare sauce", "Toast", "lemon wedge"],
+            options: ["Nothing else", "Tartare sauce", "Toast", "Lemon wedge"],
             answer: "Nothing else"
         },
         {
@@ -165,7 +165,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "burgers",
-            question: "What are the same ingredient used for Ross an Monroe?",
+            question: "What are the same ingredients used for Ross and Monroe?",
             options: ["Mayo, leaves, tomato, rib fillet 100g, grilled onion","Leaves, tomato, rib fillet 100g, grilled onion", "Buns, leaves, tomato, rib fillet 100g, bacon", "Buns, leaves, tomato, rib fillet 100g, bacon, grilled onion"],
             answer : "Leaves, tomato, rib fillet 100g, grilled onion"
         },

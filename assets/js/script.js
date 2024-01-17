@@ -57,6 +57,7 @@ function wrongAnswer(){
     optionList.appendChild(answerTwo);
 }
 
+
 // NEXT QUESTION
 
 let currentQuestionIndex = 0;
@@ -99,22 +100,23 @@ function theNextQuestion(){
     
     if(answer) optionList.removeChild(answer);       // elimina wrong o correct per la prossima domanda
 
+    // ripristino valori per domanda successiva
+
     optionButton.forEach(button => {
-        button.style.color = "";  
+        button.style.color = "";
+        button.style.border = "";
         });
 
-
+    // rimozione immagine guess
         
-        const currentImage = document.querySelector('.question-image');
+    const currentImage = document.querySelector('.question-image');
 
-        if(currentImage){
-            currentImage.parentNode.removeChild(currentImage);
-            guessTheMeal();
-        }
-      
-
-
+    if(currentImage){
+        currentImage.parentNode.removeChild(currentImage);
+        guessTheMeal();
     }
+      
+}
 
 nextQuestion.addEventListener('click', theNextQuestion);
 
@@ -142,45 +144,39 @@ function displayQuestions(category){ // collegamento ad elementi html
 
     let backButton = document.querySelector('.back');
 
-        backButton.addEventListener('click', function() {
+    backButton.addEventListener('click', function() {
 
-            let scoreText = document.querySelector('.scoreText');
-            let motivationText = document.querySelector('.motivationText');     // variabili punteggio
-            let scoreDisplay = document.querySelector('.scoreDisplay');
+        let scoreText = document.querySelector('.scoreText');
+        let motivationText = document.querySelector('.motivationText');     // variabili punteggio
+        let scoreDisplay = document.querySelector('.scoreDisplay');
 
-            if(scoreText) scoreDisplay.removeChild(scoreText);
-            if(motivationText) scoreDisplay.removeChild(motivationText);        // rimuovere elementi punteggio da home
+        if(scoreText) scoreDisplay.removeChild(scoreText);
+        if(motivationText) scoreDisplay.removeChild(motivationText);        // rimuovere elementi punteggio da home
 
-            score = 0;
-            quizHome.style.display = 'block';
-            questionCont.style.display = 'none';                    // set display home
-            logo.style.display = 'block';
-            scoreDisplay.style.display = 'none';
+        score = 0;
+        quizHome.style.display = 'block';
+        questionCont.style.display = 'none';                    // set display home
+        logo.style.display = 'block';
+        scoreDisplay.style.display = 'none';
 
-            let imageContainer = document.querySelector('.question-image');
-            if(imageContainer) questionCont.removeChild(imageContainer);              // rimuovere img quando clicco back
+        let imageContainer = document.querySelector('.question-image');
+        if(imageContainer) questionCont.removeChild(imageContainer);              // rimuovere img quando clicco back
 
-            questionCont.style.top = ('45%');
+        questionCont.style.top = ('45%');
 
-            questionNumber.style.position = ('static');                 // riporto numero posizione originale
-            questionNumber.style.transform = ('translate(0%)');
+        questionNumber.style.position = ('static');                 // riporto numero posizione originale
+        questionNumber.style.transform = ('translate(0%)');
 
-            backButton.style.top = ('100%');                    // riporto back posizione originale
-            backButton.style.right = ('70%');
+        // rimozione classi aggiuntive
 
+        document.body.classList.remove('no-background');
 
-            // ritorno immagine background
+        backButton.classList.remove('backScore');
+    });
 
-            document.body.classList.remove('no-background');
-
-    
-
-
-        });
-
-        backButton.style.display = 'block';
-        questionText.style.display = 'block';
-        optionList.style.display = 'block';
+    backButton.style.display = 'block';
+    questionText.style.display = 'block';
+    optionList.style.display = 'block';
 
 
 // pulsanti opzioni
@@ -228,12 +224,14 @@ function checkAnswer() {
     if (checked === correctAnswer) {
         this.style.backgroundColor = "lightgreen";
         this.style.color = "white";
+        this.style.border = 'none';
         rightAnswer();              // Funzione per la risposta corretta
         score++;                        // Incremento del punteggio
         console.log("punti: " + score);
     } else {
         this.style.backgroundColor = "red";
         this.style.color = "white";
+        this.style.border = 'none';
         wrongAnswer();                      // Funzione per la risposta sbagliata
     }
 
@@ -241,6 +239,7 @@ function checkAnswer() {
         if (button.textContent === correctAnswer) {
             button.style.backgroundColor = "lightgreen";        // risposta corretta anche se scelgo quella sbagliata
             button.style.color = "white";
+            button.style.border = 'none';
         }
     });
 
@@ -292,9 +291,7 @@ function showScore (){
 
 // distanza pulsante back da schermata punteggio
 
-    backButton.style.top = '80px';
-    backButton.style.left = '50%';
-
+    backButton.classList.add('backScore');
 
     console.log("punteggio: " + score);
 
