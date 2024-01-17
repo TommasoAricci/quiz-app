@@ -45,7 +45,7 @@
 @media only screen and (min-height: 851px) and (max-height: 950px) {
 
     body{
-        background-size: 68vh;
+        background-size: 100vh;
     }
 
     .logo{
@@ -85,9 +85,10 @@
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
 
     body{
-        background-position-y: 65%;
+        background-size: 150%;
+        background-position-y: 50%;
     } 
 }
