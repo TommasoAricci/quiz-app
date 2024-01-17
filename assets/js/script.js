@@ -358,6 +358,4 @@ guess.addEventListener('click', function(){
     guessTheMeal();
 })
 
-// cercare di sistemare posizione back sul punteggio di guess, non incasinare tutto
-
-// SISTEMARE DOMANDE CHE HO NASCOSTO!!!
+// rimuovere border none su check answer
