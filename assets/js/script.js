@@ -318,7 +318,7 @@ function guessTheMeal(){
 
     if (imageContainer){
         questionNumber.style.position = ('absolute');
-        questionNumber.style.top = ('-260px');
+        questionNumber.style.top = ('-280px');
         questionNumber.style.left = ('50%');
         questionNumber.style.transform = ('translate(-50%)');
     }

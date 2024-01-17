@@ -102,7 +102,7 @@ h2{
 }
 
 #questionText{
-    width: 90%;
+    width: 80%;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -228,10 +228,10 @@ h2{
 
 .question-image{
     position: absolute;
-    top: -210px;
+    top: -230px;
     left: 50%;
     transform: translate(-50%);
-    max-width: 210px;
+    max-width: 230px;
     border-radius: 5px;
 }
 
