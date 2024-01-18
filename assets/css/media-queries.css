@@ -32,25 +32,25 @@
 @media only screen and (min-height: 701px) and (max-height: 850px) {
 
     body{
-        background-size: 68vh;
+        background-size: 100vh;
     }
 
     .logo{
-        width: 150px;
+        width: 130px;
         top: 30px;
     } 
 
 }
 
-@media only screen and (min-height: 851px) and (max-height: 950px) {
+@media only screen and (min-height: 851px) and (max-height: 1300px) {
 
     body{
         background-size: 68vh;
     }
 
     .logo{
-        width: 130px;
-        top: 60px;
+        width: 150px;
+        top: 10%;
     }
 } 
 
@@ -81,13 +81,7 @@
 @media only screen and (min-width: 400px) {
 
     #option-list .option{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
-@media only screen and (min-width: 600px) {
-
-    body{
-        background-position-y: 65%;
-    } 
-}

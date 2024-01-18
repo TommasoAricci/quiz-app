@@ -29,16 +29,14 @@ body, html{
 }
 
 body{
-    background-image: url(../img/prova.jpg);
-    background-size: 150%;
-    background-position-y: 70%;
-    background-position-x: 50%;
+    background-image: url(../img/4.jpg);
+    background-size: 100vh;
+    background-position: bottom;
+    background-position-y: 80%;
 }
 
 .no-background {
-    background-position-y: 30%;
-    background-position-x: 80%;
-
+    background-image: none;
 }
 
 /*HOME*/
@@ -83,12 +81,11 @@ h2{
 
 .categories button{
     background-image: url(../img/wallpaper.png);
-    background-size: 110%;
+    background-size: 90%;
     opacity: 90%;
 
-    width: 150px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 170px;
+    height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
 
