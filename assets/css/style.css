@@ -5,13 +5,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cafe', sans-serif;
+    font-family: 'Cafe';
     font-weight: 900;
 }
 
 @font-face{
     font-family: 'Cafe';
     src: url(../fonts/cafe.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Bold';
+    src: url(../fonts/DINNextSlabRust-Black.woff) format('woff');
 }
 
 body, html{
@@ -29,17 +34,6 @@ body, html{
 }
 
 body{
-<<<<<<< HEAD
-    background-image: url(../img/prova.jpg);
-    background-size: 100vh;
-    background-position-y: 70%;
-    background-position-x: 50%;
-}
-
-.no-background {
-    background-position-y: 30%;
-    background-position-x: 80%;
-=======
     background-image: url(../img/4.jpg);
     background-size: 100vh;
     background-position: bottom;
@@ -48,7 +42,6 @@ body{
 
 .no-background {
     background-image: none;
->>>>>>> dev
 }
 
 /*HOME*/
@@ -68,15 +61,19 @@ body{
 
 h1{
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-family: Bold;
+    text-transform: uppercase;
 }
 
 h2{
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     color: green;
+    font-family: Bold;
+    text-transform: uppercase;
 
 }
 
@@ -91,16 +88,12 @@ h2{
     flex-wrap: wrap;
 }
 
-.categories button{
+.buttonCategory{
     background-image: url(../img/wallpaper.png);
-<<<<<<< HEAD
-    background-size: 80%;
-=======
-    background-size: 90%;
->>>>>>> dev
+    background-size: 55%;
     opacity: 90%;
 
-    width: 170px;
+    width: 160px;
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -110,11 +103,7 @@ h2{
     cursor: pointer;
     background-color: lightgreen;
     color: white;
-    font-size: 15px;
-}
-
-#guess{
-    background-color: orange;
+    font-size: 16px;
 }
 
 /*QUESTIONS*/

@@ -52,13 +52,13 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "BBC comes with baked beans, melted pizza cheese, and?",
+            question: "BBC comes with baked beans, melted pizza cheese, and...?",
             options: ["Nothing else", "Toast", "Gravy", "Bacon"],
             answer: "Toast"
         },
         {
             category: "kids",
-            question: "Lego comes with battered fish, fries, and?",
+            question: "Lego comes with battered fish, fries, and...?",
             options: ["Nothing else", "Tartare sauce", "Toast", "Lemon wedge"],
             answer: "Nothing else"
         },
@@ -70,13 +70,25 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "What comes with Snow White?",
+            question: "What does Snow White come with?",
             options: ["Pasta, mince beef", "Pasta, mince beef, gravy", "Mince beef, toast", "Pasta, mince beef, pizza cheese"],
             answer: "Pasta, mince beef"
         },
         {
             category: "kids",
             question: "How many handfuls of fries between Poseidon, Silver, COT, The Welcome Stranger?",
+            options: ["4", "3", "2", "1"],
+            answer: "2"
+        },
+        {
+            category: "kids",
+            question: "In what meal maple syrup is not served?",
+            options: ["Naughty", 'Sleepy', 'Minnie Mouse', 'Bell Song'],
+            answer: "Bell Song"
+        },
+        {
+            category: "kids",
+            question: "What sauce does Poseidon come with?",
             options: ["4", "3", "2", "1"],
             answer: "2"
         },
