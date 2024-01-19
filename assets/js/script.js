@@ -15,10 +15,9 @@ let optionList = document.getElementById('option-list');
 let questionText = document.getElementById('questionText');
 const categories = document.querySelector('.categories');
 const questionCont = document.querySelector('.question-container');
-
 const buttonHome = document.querySelectorAll('.buttonCategory');
-
 const scoreDisplay = document.querySelector(".scoreDisplay");
+const title = document.querySelector('.title');
 
 let optionClicked = false;   // controllo clic domanda
 
@@ -156,7 +155,7 @@ function displayQuestions(category){ // collegamento ad elementi html
         score = 0;
         quizHome.style.display = 'block';
         questionCont.style.display = 'none';                    // set display home
-        logo.style.display = 'block';
+        title.style.display = 'block';
         scoreDisplay.style.display = 'none';
 
         let imageContainer = document.querySelector('.question-image');
@@ -196,7 +195,7 @@ function displayQuestions(category){ // collegamento ad elementi html
     }
 
     optionButton = document.querySelectorAll('.option');
-    if(logo) logo.style.display = 'none';
+    if(title) title.style.display = 'none';
 
     // numero domande
 

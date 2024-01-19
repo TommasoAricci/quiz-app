@@ -88,12 +88,40 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "What sauce does Poseidon come with?",
-            options: ["4", "3", "2", "1"],
-            answer: "2"
+            question: "What doesn't come with granola?",
+            options: ["12 Meters",'Base Line', 'Dennis Connor', 'Syd Fisher'],
+            answer: "Base Line"
         },
-    
-        
+        {
+            category: "kids",
+            question: "What the ingredients of Shooter?",
+            options: ['Bircher, berry compote, yoghurt, nuts', 'Granola, berry compote, yoghurt, nuts', 'Bircher, yoghurt, maple syrup, pouring cream', 'Bircher, rasperries, berry compote, yoghurt, nuts'],
+            answer: "Bircher, berry compote, yoghurt, nuts"
+        },
+        {
+            category: "kids",
+            question: "What doesn't come as a porridge?",
+            options: ['Base Line', 'Chris Dixon', 'Syd Fisher', '12 Meters'],
+            answer: "Syd Fisher"
+        },
+        {
+            category: "kids",
+            question: "Base Line comes with Porridge, berry compote, strawberry, and...?",
+            options: ['Pouring cream', 'Maple syrup', 'Yoghurt', 'Nuts'],
+            answer: "Pouring cream"
+        },
+        {
+            category: "kids",
+            question: "In what of these meals rasperries are served?",
+            options: ['Base Line', 'Syd Fisher', 'Shooter', 'Brixton'],
+            answer: "Brixton"
+        },
+        {
+            category: "kids",
+            question: "What meal is: Bircher, fruit salad, rasperries, berry compote, yoghurt, nuts?",
+            options: ['Dennis Connor', '12 Meters', 'Brixton', 'Syd Fisher'],
+            answer: "Brixton"
+        },        
     ],
     
     breakfast: [
@@ -133,6 +161,43 @@ const quizzes = {  // lista domande
             options: ["Gilbert", "Test Match", "Endeavour", "Emirates"],
             answer: "Emirates"
         },
+        {
+            category: "breakfast",
+            question: "How many toasts between ET, Val, Sheperd's Delight, Mount Hood?",
+            options: ['5','8', '7', '3'],
+            answer: "5"
+        },
+        {
+            category: "breakfast",
+            question: "What meal is: 1 bacon, 1 grilled tomato, 3 sausages, 2 hash browns, grilled mushrooms, 1 egg, relish, 2 toasts?",
+            options: ['Winx', 'Jim Hawkins', 'Webb', 'Zendaye'],
+            answer: "Winx"
+        },
+        {
+            category: "breakfast",
+            question: "In what of these meals grilled onion is served?",
+            options: ['Mount Hood', 'Stockmans Treat', "Sheperd's Delight", "Shearer's Classic"],
+            answer: "Sheperd's Delight"
+        },
+        {
+            category: "breakfast",
+            question: "What is the default cooking for a 100g rib fillet?",
+            options: ['Medium rare', 'Medium', 'Rare', 'Well done'],
+            answer: "Medium rare"
+        },
+        {
+            category: "breakfast",
+            question: "In what of these meals mashed potato is served?",
+            options: ['Paddy 0', 'Tahiti', 'Abercorn', 'Police'],
+            answer: "Tahiti"
+        },
+        {
+            category: "breakfast",
+            question: "Merino comes with Pulled lamb, fried egg, bacon, hash browns, sausages, grilled tomato, toast, and...?",
+            options: ['Grilled onion', 'Grilled mushrooms', 'Relish', 'Gravy'],
+            answer: "Gravy"
+        },
+
     ],
 
     steaks: [
