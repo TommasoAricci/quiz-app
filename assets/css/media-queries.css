@@ -1,6 +1,6 @@
 /* WIDTH */
 
-@media only screen and (min-width: 250px) and (max-width: 359px){
+@media only screen and (min-width: 250px) and (max-width: 359px){            /* piccolo schermo*/
 
     .title{
         margin-top: 80px;
@@ -12,14 +12,14 @@
    }
 
    .categories{
-    width: 50%;
-    height: 280px;
+        width: 50%;
+        height: 280px;
    }
 
    .buttonCategory{
-    width: 120px;
-    height: 40px;
-    font-size: 13px;
+        width: 120px;
+        height: 40px;
+        font-size: 13px;
    }
 
    .question-container{
@@ -28,49 +28,45 @@
    }
 
    #option-list .option{
-    width: 200px;
-    padding: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: 12px;
+        width: 200px;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
    }
 
    #questionText{
-    width: 80%;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
+        width: 80%;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
 
-.next{
-    height: 30px;
-    width: 60px;
-}
+    .next{
+        height: 30px;
+        width: 60px;
+    }
 
-.back{
-    height: 30px;
-    width: 60px;
-}
+    .back{
+        height: 30px;
+        width: 60px;
+    }
 
-.scoreText{
-    font-size: 10px;
-    text-align: center;
-}
+    .scoreText{
+        font-size: 10px;
+        text-align: center;
+    }
 
-.motivationText{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+    .motivationText{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 
 }
 
 @media only screen and (min-width: 360px) and (max-width: 400px) {                  /*iphone SE*/
-
-    body{
-        height: 100vh;
-    }
 
    .next{
         left: 80%;
@@ -111,6 +107,12 @@
         font-size: 25px;
         margin-bottom: 10px;
     }
+
+    .buttonCategory{
+        font-size: 13px;
+        width: 130px;
+        height: 50px;
+    }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 450px) {
@@ -127,6 +129,17 @@
     .logo{
         width: 100px;
     }
+
+    .scoreText{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .motivationText{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
 
 }
 

@@ -86,38 +86,50 @@ h1{
 }
 
 h2{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .categories{
     margin: auto;
     width: 70%;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .buttonCategory{
-    width: 160px;
-    height: 50px;
+    width: 150px;
+    height: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
 
-    border-radius: 7px;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: lightgreen;
-    color: white;
-    font-size: 16px;
-}
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: 2px solid black;
+    font-family: Cafe;
 
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    transform: rotate(-2deg);
+
+
+}
 /*QUESTIONS*/
 
 .question-container{
