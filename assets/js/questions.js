@@ -86,6 +86,9 @@ const quizzes = {  // lista domande
             options: ["Naughty", 'Sleepy', 'Minnie Mouse', 'Bell Song'],
             answer: "Bell Song"
         },
+
+        // Oats
+
         {
             category: "kids",
             question: "What doesn't come with granola?",
@@ -199,11 +202,52 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "How many grilled tomatoes between",
-            options: ['Medium rare', 'Medium', 'Rare', 'Well done'],
-            answer: "Medium rare"
+            question: "How many grilled tomatoes between Merino, Winx, Zendaye, Gateway?",
+            options: ['3', '4', '1', '2',],
+            answer: "3"
         },
-        
+        {
+            category: "breakfast",
+            question: "What meal doesn't come with grilled tomato?",
+            options: ['Zendaye', 'Emirates', 'Test Match', 'Webb'],
+            answer: "Webb"
+        },
+        {
+            category: "breakfast",
+            question: "What's the difference between Peachy and KK?",
+            options: ['Peachy comes as a wrap, KK as a burger', 'Peachy coms as a burger, KK as a wrap', 'Peachy has scrambled egg, KK has fried egg', 'Peachy has two bacon, KK has one bacon'],
+            answer: "Peachy comes as a wrap, KK as a burger"
+        },
+        {
+            category: "breakfast",
+            question: "What are the ingredients of Compton's Peak?",
+            options: ['Turkish bread, tomato sauce, cheddar cheese, bacon, onion rings, poached egg, hollandaise sauce', 'Turkish bread, tomato sauce, cheddar cheese, fried egg, bacon, onion rings,', 'Potato rosti, bacon, sausages, onion rings, baked beans, toast', 'Turkish bread, relish, wilted spinach, vege rosti, mash avo, fresh chilli'],
+            answer: "Turkish bread, tomato sauce, cheddar cheese, bacon, onion rings, poached egg, hollandaise sauce"
+        },
+        {
+            category: "breakfast",
+            question: "What meal doesn't come with bacon?",
+            options: ['Kiwi', 'Gateway', 'Gilbert', 'True Blue'],
+            answer: "Gilbert"
+        },
+        {
+            category: "breakfast",
+            question: "How many scrambled eggs between True Blue, Peachy, 'Test Match', 'Bonza?",
+            options: ['Two full', 'One and half', 'One full', 'Two and half'],
+            answer: "Two full"
+        },
+        {
+            category: "breakfast",
+            question: "How many toasts between ET, KK, Endevour, Compton's Peak?",
+            options: ['Kiwi', 'Gateway', 'Gilbert', 'True Blue'],
+            answer: "Gilbert"
+        },
+        {
+            category: "breakfast",
+            question: "Gateway comes with rib fillet 100g, bacon, fried egg, hash browns, relish, toast, and...?",
+            options: ['Grilled mushrooms', 'Gravy', 'Grilled onion', 'Poached egg'],
+            answer: "Grilled mushrooms"
+        },
         
     ],
 
@@ -219,7 +263,120 @@ const quizzes = {  // lista domande
             question: "What's the difference between Bradman and Warney?",
             options: ["Bradman has bacon, Warney has prawns","Bradman has prawns, Warney has bacon", "Bradman comes with additional creamy mushrooms", "Warney has salad, Bradman hasn't"],
             answer : "Bradman has prawns, Warney has bacon"
-        }
+        },
+        {
+            category: "steaks",
+            question: "What steaks are available in Empire State Bulding?",
+            options: ["180g and 300g", '200g and 300g', '100g and 200g', '180g and 200g'],
+            answer : "180g and 300g"
+        },
+        {
+            category: "steaks",
+            question: "What meal is: Rib fillet 200g or 100g, creamy mushrooms, waffled fries, salad?",
+            options: ["Hillary", "Highfields", "Empire State Building", 'Buckingham Palace'],
+            answer : "Hillary"
+        },
+        {
+            category: "steaks",
+            question: "How many handfuls of normal fries between Thrid, Prince William, Bradman, Highfields?",
+            options: ["2", '3', '1', '4'],
+            answer : "2"
+        },
+        {
+            category: "steaks",
+            question: "What meal comes with salad?",
+            options: ["King Charles", 'London', 'Highfields', 'Empire State Building'],
+            answer : "King Charles"
+        },
+        {
+            category: "steaks",
+            question: "What are the ingredients of London?",
+            options: ['Rib fillet 180g or 300g, grilled onion, bacon, sausages, fried egg, fries', 'Rib fillet 100g or 200g, grilled onion, bacon, sausages, fried egg, fries', 'Rib fillet 200g or 100g, mashed potato, rocky carrots, yoghurt and nuts, gravy', 'Rib fillet 180g or 300g, mashed potato, rocky carrots, yoghurt and nuts, gravy'],
+            answer : "Rib fillet 180g or 300g, grilled onion, bacon, sausages, fried egg, fries"
+        },
+        {
+            category: "steaks",
+            question: "How many rocky carrots between Buckingham Palace, Hillary, Third, London?",
+            options: ['6', '9', '3', '12'],
+            answer : "6"
+        },
+        {
+            category: "steaks",
+            question: "What steak comes normally with Prince William, Buckingham Palace, King Charles?",
+            options: ['100g', '250g', '300g', '200'],
+            answer : "250g"
+        },
+        {
+            category: "steaks",
+            question: "How many salads between Warney, King Charles, Bradman, Hillary?",
+            options: ['4', '3', '2', '1'],
+            answer : '4'
+        },
+
+        // salads
+
+        {
+            category: "steaks",
+            question: "In what meal halloumi is served?",
+            options: ['Roger Banister', 'Julius', 'Skippy', 'Paper White'],
+            answer : 'Roger Banister'
+        },
+        {
+            category: "steaks",
+            question: "What of these meals is available in a half serve too?",
+            options: ['Julius', 'Cherry Blossom', 'Paper White', 'Roger Banister'],
+            answer : 'Julius'
+        },
+        {
+            category: "steaks",
+            question: "What meals are served with chilli?",
+            options: ['Paper White, Skippy, Roger Banister', 'Rooster, Julius, Paper White', 'Skippy, Cherry Blossom, PAB', 'PAB, Paper White, SKippy'],
+            answer : 'Paper White, Skippy, Roger Banister'
+        },
+        {
+            category: "steaks",
+            question: "How many prawns are served in a half serve of PAB?",
+            options: ['5', '10', '4', '3'],
+            answer : '5'
+        },
+        {
+            category: "steaks",
+            question: "Julius comes with sliced chicken breast, green leaves, crispy bacon, poached egg, creamy parmesan, parmesan cheese, and...?",
+            options: ['Croutons', 'Monet tomatoes', 'Coleslaw', 'Italian dressing'],
+            answer : 'Croutons'
+        },
+        {
+            category: "steaks",
+            question: "What are the same ingredients for Skippy and Paper White?",
+            options: ['Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts', 'Monet tomatoes, crispy bacon, italian dressing', 'Green leaves, coleslaw, poached egg, parmesan dressing, parmesan', 'Monet tomatoes, italian dressing, hollandaise sauce, nuts'],
+            answer : 'Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts'
+        },
+        {
+            category: "steaks",
+            question: "What meals are served with nuts?",
+            options: ['Paper White, Skippy, Cherry Blossom, Roger Banister', 'Skippy, Cherry Blossom, PAB, Julius', 'Paper White, Skippy, Roger Banister, Rooster', 'PAB, Julius, Paper White, Rooster'],
+            answer : 'Paper White, Skippy, Cherry Blossom, Roger Banister'
+        },
+        {
+            category: "steaks",
+            question: "What meal is served with smoked salmon?",
+            options: ['Skippy', 'Paper White', 'Cherry Blossom', 'Roger Banister'],
+            answer : 'Paper White'
+        },
+        {
+            category: "steaks",
+            question: "What meal is served with cajun chicken breast?",
+            options: ['Rooster', 'Julius', 'Paper White', 'Cherry Blossom'],
+            answer : 'Rooster'
+        },
+        {
+            category: "steaks",
+            question: "Cherry Blossom comes with grilled salmon or barramundi, green leaves, coleslaw, monet tomatoes, italian dressing, nuts, and...",
+            options: ['Peri peri mayo', 'Hollandaise sauce', 'Croutons', 'Fresh chilli'],
+            answer : 'Hollandaise sauce'
+        },
+
+
     ],
 
     pasta: [
@@ -234,7 +391,7 @@ const quizzes = {  // lista domande
     burgers: [
         {
             category: "burgers",
-            question: "List the ingredients of Green & Gold",
+            question: "What are the ingredients of Green & Gold",
             options: ["Buns, mayo, green leaves, tomato, beef patty, cheese, fried egg, hash brown, bacon",
             "Buns peri peri mayo, green leaves, tomato, beef patty, bacon",
             "Buns, mayo, green leaves, tomato, fried chicken, cheese",
@@ -249,7 +406,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "burgers",
-            question: "What are the same ingredients used for Ross and Monroe?",
+            question: "What are the same ingredients for Ross and Monroe?",
             options: ["Mayo, leaves, tomato, rib fillet 100g, grilled onion","Leaves, tomato, rib fillet 100g, grilled onion", "Buns, leaves, tomato, rib fillet 100g, bacon", "Buns, leaves, tomato, rib fillet 100g, bacon, grilled onion"],
             answer : "Leaves, tomato, rib fillet 100g, grilled onion"
         },

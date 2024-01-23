@@ -68,7 +68,7 @@ let currentQuestionIndex = 0;
 
 let nextQuestion = document.createElement('button');
 nextQuestion.textContent = "NEXT";
-nextQuestion.className = "next ";                   // creazione pulsante
+nextQuestion.className = "next";                   // creazione pulsante
 optionList.appendChild(nextQuestion);
 
 function theNextQuestion(){

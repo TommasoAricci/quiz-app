@@ -195,35 +195,33 @@ h2{
     transform: translateX(-50%);
     margin-top: 20px;
     height: 40px;
-    width: 70px;
+    width: 60px;
     background-color: lightgreen;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 12px;
     font-weight: 500;
-    color: black;
-}
 
+
+}
 /*back button*/
 
 .back{
     height: 40px;
-    width: 70px;
+    width: 60px;
     cursor: pointer;
     position: absolute;
     top: 99.3%;
-    right: 68%;
+    right: 69%;
     margin-top: 20px;
     transform: translateX(-50%);
-    background-color: orange;
-    color: white;
+    background-color: black;
     border: none;
     border-radius: 5px;
     font-size: 12px;
     font-weight: 500;
-    background-image: url(../img/wallpaper.png);
-    background-size: 200%;
+
 }
 
 .backScore{

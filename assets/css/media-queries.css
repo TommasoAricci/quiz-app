@@ -69,7 +69,7 @@
 @media only screen and (min-width: 360px) and (max-width: 400px) {                  /*iphone SE*/
 
    .next{
-        left: 80%;
+        left: 79%;
    }
 
    h1{
@@ -140,12 +140,38 @@
         margin-bottom: 10px;
     }
 
+    .next{
+        left: 81%;
+    }
+
+    .back{
+        right: 67%;
+    }
+
 
 }
+
+/* HEIGHT */
 
 @media only screen and (min-height: 800px) and (max-height: 950px) {      /* modifica altezza solo posizione elementi*/
 
     .title{
         top: 5%;
     }
+}
+
+@media only screen and (min-height: 951px) {
+
+    .title{
+        top: 10%;
+    }
+
+}
+
+@media only screen and (min-height: 1100px) {
+
+    .title{
+        top: 15%;
+    }
+
 }
