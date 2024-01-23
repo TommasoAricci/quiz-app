@@ -163,21 +163,27 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "How many toasts between ET, Val, Sheperd's Delight, Mount Hood?",
-            options: ['5','8', '7', '3'],
-            answer: "5"
-        },
-        {
-            category: "breakfast",
             question: "What meal is: 1 bacon, 1 grilled tomato, 3 sausages, 2 hash browns, grilled mushrooms, 1 egg, relish, 2 toasts?",
             options: ['Winx', 'Jim Hawkins', 'Webb', 'Zendaye'],
             answer: "Winx"
         },
         {
             category: "breakfast",
-            question: "In what of these meals grilled onion is served?",
-            options: ['Mount Hood', 'Stockmans Treat', "Sheperd's Delight", "Shearer's Classic"],
-            answer: "Sheperd's Delight"
+            question: "How many bacons between Farmer, Kiwi, Compton's Peak, Jim Hawkins?",
+            options: ['5', '8', '3', '6'],
+            answer: "5"
+        },
+        {
+            category: "breakfast",
+            question: "What meals come with relish?",
+            options: ['Zendaye, Jim hawkins,', 'Emirates, Winx', 'Zendaye, Winx', "Compton's Peak, Zendaye"],
+            answer: "Zendaye, Winx"
+        },
+        {
+            category: "breakfast",
+            question: "Merino comes with Pulled lamb, fried egg, bacon, hash browns, sausages, grilled tomato, toast, and...?",
+            options: ['Grilled onion', 'Grilled mushrooms', 'Relish', 'Gravy'],
+            answer: "Gravy"
         },
         {
             category: "breakfast",
@@ -187,17 +193,18 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "In what of these meals mashed potato is served?",
-            options: ['Paddy 0', 'Tahiti', 'Abercorn', 'Police'],
-            answer: "Tahiti"
+            question: "List the ingredient of Webb",
+            options: ['Potato rosti, rib fillet 100g, grilled onion, poached egg, hollandaise sauce, toast','Rib fillet 100g, bacon, fried egg, hash brown, poached egg, toast', 'Vege rosti, rib fillet 100g, grilled onion, poached egg, hollandaise sauce, toast', 'Potato rosti, pork belly, poached eggs, hallandaise sauce, toast'],
+            answer: "Potato rosti, rib fillet 100g, grilled onion, poached egg, hollandaise sauce, toast"
         },
         {
             category: "breakfast",
-            question: "Merino comes with Pulled lamb, fried egg, bacon, hash browns, sausages, grilled tomato, toast, and...?",
-            options: ['Grilled onion', 'Grilled mushrooms', 'Relish', 'Gravy'],
-            answer: "Gravy"
+            question: "How many grilled tomatoes between",
+            options: ['Medium rare', 'Medium', 'Rare', 'Well done'],
+            answer: "Medium rare"
         },
-
+        
+        
     ],
 
     steaks: [
@@ -245,6 +252,57 @@ const quizzes = {  // lista domande
             question: "What are the same ingredients used for Ross and Monroe?",
             options: ["Mayo, leaves, tomato, rib fillet 100g, grilled onion","Leaves, tomato, rib fillet 100g, grilled onion", "Buns, leaves, tomato, rib fillet 100g, bacon", "Buns, leaves, tomato, rib fillet 100g, bacon, grilled onion"],
             answer : "Leaves, tomato, rib fillet 100g, grilled onion"
+        },
+    ],
+
+    omelette: [
+        {
+            category: "omelette",
+            question: "How many handfuls of fries between Southern Cross, Jack, Peggy and BBBB?",
+            options: ["1","2","3","4"],
+            answer : "2"
+        }
+
+    ],
+
+    fish: [
+        {
+            category: "fish",
+            question: "How many handfuls of fries between Southern Cross, Jack, Peggy and BBBB?",
+            options: ["1","2","3","4"],
+            answer : "2"
+        }
+
+    ],
+
+    sweets: [
+        {
+            category: "sweets",
+            question: "How many handfuls of fries between Southern Cross, Jack, Peggy and BBBB?",
+            options: ["1","2","3","4"],
+            answer : "2"
+        }
+
+    ],
+
+    pork: [
+        {
+            category: "pork",
+            question: "How many toasts between ET, Val, Sheperd's Delight, Mount Hood?",
+            options: ['5','8', '7', '3'],
+            answer: "5"
+        },
+        {
+            category: "pork",
+            question: "In what of these meals mashed potato is served?",
+            options: ['Paddy 0', 'Tahiti', 'Abercorn', 'Police'],
+            answer: "Tahiti"
+        },
+        {
+            category: "pork",
+            question: "In what of these meals grilled onion is served?",
+            options: ['Mount Hood', 'Stockmans Treat', "Sheperd's Delight", "Shearer's Classic"],
+            answer: "Sheperd's Delight"
         },
     ],
 

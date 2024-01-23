@@ -7,6 +7,11 @@ const steaks = document.getElementById('steaks');
 const pasta = document.getElementById('pasta');
 const burgers = document.getElementById('burgers');
 const missing = document.getElementById('missing');
+const omelette = document.getElementById('omelette')
+const fish = document.getElementById('fish');
+const sweets = document.getElementById('sweets');
+const pork = document.getElementById('pork');
+
 const guess = document.getElementById('guess');
 
 let quizHome = document.querySelector('.quiz-home');
@@ -349,6 +354,26 @@ pasta.addEventListener('click', function(){
 burgers.addEventListener('click', function(){
     currentQuestionIndex = 0
     displayQuestions("burgers");
+})
+
+omelette.addEventListener('click', function(){
+    currentQuestionIndex = 0
+    displayQuestions("omelette");
+})
+
+fish.addEventListener('click', function(){
+    currentQuestionIndex = 0
+    displayQuestions("fish");
+})
+
+sweets.addEventListener('click', function(){
+    currentQuestionIndex = 0
+    displayQuestions("sweets");
+})
+
+pork.addEventListener('click', function(){
+    currentQuestionIndex = 0
+    displayQuestions("pork");
 })
 
 guess.addEventListener('click', function(){
