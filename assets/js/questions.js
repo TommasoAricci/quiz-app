@@ -82,7 +82,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "In what meal maple syrup is not served?",
+            question: "In which meal is maple syrup not served?",
             options: ["Naughty", 'Sleepy', 'Minnie Mouse', 'Bell Song'],
             answer: "Bell Song"
         },
@@ -115,7 +115,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "In what of these meals rasperries are served?",
+            question: "In which of these meals are rasperries served?",
             options: ['Base Line', 'Syd Fisher', 'Shooter', 'Brixton'],
             answer: "Brixton"
         },
@@ -136,13 +136,13 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "In what meal two hash browns are not served?",
+            question: "In which meal are two hash browns not served?",
             options: ["Jim Hawkins", "Test Match", "Emirates", "Zinzan"],
             answer: "Emirates"
         },
         {
             category: "breakfast",
-            question: "In what meal sausages are not served?",
+            question: "In which meal are sausages not served?",
             options: ["Winx", "Zendaye", "Jim Hawkins", "Tony"],
             answer: "Jim Hawkins"
         },
@@ -160,7 +160,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "In what meal 2 eggs are not served?",
+            question: "In which meal are 2 eggs not served?",
             options: ["Gilbert", "Test Match", "Endeavour", "Emirates"],
             answer: "Emirates"
         },
@@ -254,7 +254,7 @@ const quizzes = {  // lista domande
     steaks: [
         {
             category: "steaks",
-            question: "In what meals creamy mushrooms are not served?",
+            question: "In which meals are creamy mushrooms not served?",
             options: ["Hillary", "Highfields", "HammerThrow", "King Charles"],
             answer : "King Charles"
         },
@@ -263,12 +263,6 @@ const quizzes = {  // lista domande
             question: "What's the difference between Bradman and Warney?",
             options: ["Bradman has bacon, Warney has prawns","Bradman has prawns, Warney has bacon", "Bradman comes with additional creamy mushrooms", "Warney has salad, Bradman hasn't"],
             answer : "Bradman has prawns, Warney has bacon"
-        },
-        {
-            category: "steaks",
-            question: "What steaks are available in Empire State Bulding?",
-            options: ["180g and 300g", '200g and 300g', '100g and 200g', '180g and 200g'],
-            answer : "180g and 300g"
         },
         {
             category: "steaks",
@@ -306,24 +300,18 @@ const quizzes = {  // lista domande
             options: ['100g', '250g', '300g', '200'],
             answer : "250g"
         },
-        {
-            category: "steaks",
-            question: "How many salads between Warney, King Charles, Bradman, Hillary?",
-            options: ['4', '3', '2', '1'],
-            answer : '4'
-        },
 
         // salads
 
         {
             category: "steaks",
-            question: "In what meal halloumi is served?",
+            question: "In which meal is haloumi served?",
             options: ['Roger Banister', 'Julius', 'Skippy', 'Paper White'],
             answer : 'Roger Banister'
         },
         {
             category: "steaks",
-            question: "What of these meals is available in a half serve?",
+            question: "Which of these meals is available in a half serve?",
             options: ['Julius', 'Cherry Blossom', 'Paper White', 'Roger Banister'],
             answer : 'Julius'
         },
@@ -335,21 +323,9 @@ const quizzes = {  // lista domande
         },
         {
             category: "steaks",
-            question: "How many prawns are served in a half serve of PAB?",
-            options: ['5', '10', '4', '3'],
-            answer : '5'
-        },
-        {
-            category: "steaks",
             question: "Julius comes with sliced chicken breast, green leaves, crispy bacon, poached egg, creamy parmesan, parmesan cheese, and...?",
             options: ['Croutons', 'Monet tomatoes', 'Coleslaw', 'Italian dressing'],
             answer : 'Croutons'
-        },
-        {
-            category: "steaks",
-            question: "What are the same ingredients for Skippy and Paper White?",
-            options: ['Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts', 'Monet tomatoes, crispy bacon, italian dressing', 'Green leaves, coleslaw, poached egg, parmesan dressing, parmesan', 'Monet tomatoes, italian dressing, hollandaise sauce, nuts'],
-            answer : 'Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts'
         },
         {
             category: "steaks",
@@ -363,6 +339,49 @@ const quizzes = {  // lista domande
             options: ['Skippy', 'Paper White', 'Cherry Blossom', 'Roger Banister'],
             answer : 'Paper White'
         },
+       
+        {
+            category: "steaks",
+            question: "Cherry Blossom comes with grilled salmon or barramundi, green leaves, coleslaw, monet tomatoes, italian dressing, nuts, and...",
+            options: ['Peri peri mayo', 'Hollandaise sauce', 'Croutons', 'Fresh chilli'],
+            answer : 'Hollandaise sauce'
+        },
+
+        // soups
+
+        {
+            category: "steak",
+            question: "What meal comes with Haystacks tomato soup?",
+            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
+            answer : 'Warhol'
+        },
+        {
+            category: "steak",
+            question: "What meal is: Pumpkin soup, sliced chorizo, grilled onion, turkish bread?",
+            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
+            answer : 'Mast'
+        },
+        {
+            category: "steak",
+            question: "What meals are suitable for vegetarians?",
+            options: ['Jumping Frog, Warhol', 'Mast, Mizzen', 'Mizzen, Warhol', 'Warhol, Mast'],
+            answer : 'Jumping Frog, Warhol'
+        },
+        {
+            category: "steak",
+            question: "What are the ingredients of Jumping Frog?",
+            options: ['Pumpkin soup, turkish bread', 'Pumpkin soup, grilled chorizo, grilled onion, turkish bread', 'Haystacks tomato soup, croutons, puring cream', 'Pumkin soup, sliced chicken breast, grilled onion, pouring cream'],
+            answer : 'Pumpkin soup, turkish bread'
+        },
+        {
+            category: "steak",
+            question: "Mizzen comes with: pumpkin soup, sliced chicken breast, grilled onion, and...?",
+            options: ['Pouring cream', 'Croutons', 'Turkish bread', 'Sliced chorizo'],
+            answer : 'Pouring cream'
+        },
+
+        /*
+
         {
             category: "steaks",
             question: "What meal is served with cajun chicken breast?",
@@ -371,12 +390,30 @@ const quizzes = {  // lista domande
         },
         {
             category: "steaks",
-            question: "Cherry Blossom comes with grilled salmon or barramundi, green leaves, coleslaw, monet tomatoes, italian dressing, nuts, and...",
-            options: ['Peri peri mayo', 'Hollandaise sauce', 'Croutons', 'Fresh chilli'],
-            answer : 'Hollandaise sauce'
+            question: "What are the same ingredients for Skippy and Paper White?",
+            options: ['Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts', 'Monet tomatoes, crispy bacon, italian dressing', 'Green leaves, coleslaw, poached egg, parmesan dressing, parmesan', 'Monet tomatoes, italian dressing, hollandaise sauce, nuts'],
+            answer : 'Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts'
+        },
+        {
+            category: "steaks",
+            question: "How many prawns are served in a half serve of PAB?",
+            options: ['5', '10', '4', '3'],
+            answer : '5'
+        },
+        {
+            category: "steaks",
+            question: "How many salads between Warney, King Charles, Bradman, Hillary?",
+            options: ['4', '3', '2', '1'],
+            answer : '4'
+        },
+        {
+            category: "steaks",
+            question: "What steaks are available in Empire State Bulding?",
+            options: ["180g and 300g", '200g and 300g', '100g and 200g', '180g and 200g'],
+            answer : "180g and 300g"
         },
 
-
+        */
     ],
 
     pasta: [
@@ -389,14 +426,14 @@ const quizzes = {  // lista domande
         {
             category: "pasta",
             question: "What pasta is suitable for vegetarians?",
-            options: ["Blackbeard", 'Picasso', 'Tati', 'There is no any vegetarian pasta'],
-            answer : "There is no any vegetarian pasta"
+            options: ["Blackbeard", 'Picasso', 'Tati', 'There is no any one'],
+            answer : "There is no any one"
         },
         {
             category: "pasta",
-            question: "What pasta is available in a full and half serve too?",
-            options: ['All of them', 'Fotis, Tati, Nicole', 'Dali, Fotis, Tati', 'Picasso, Tati, Blackbeard'],
-            answer : "All of them"
+            question: "What pasta is not available in a half serve?",
+            options: ['Fotis', 'Blackbeard', 'Picasso', 'Tati'],
+            answer : "Blackbeard"
         },
         {
             category: "pasta",
@@ -424,7 +461,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "pasta",
-            question: "What of these meals come with creamy Haystacks tomato sauce?",
+            question: "Which of these meals comes with creamy Haystacks tomato sauce?",
             options: ['Blackbeard, Picasso, Dali', 'Tati, Nicole, Fotis', 'Blackbeard, Dali, Tati', 'Tati, Picasso, Fotis'],
             answer : 'Blackbeard, Picasso, Dali'
         },
@@ -440,50 +477,44 @@ const quizzes = {  // lista domande
             options: ['Pasta, grilled mushrooms, crispy diced bacon, creamy sauce, parmesan cheese', 'Pasta, sliced chicken breast, spinach, Haystacks sauce', 'Pasta, prawns, spinach, onion, Haystacks sauce, parmesan cheese', 'Pasta, grilled mushrooms, sliced chorizo, creamy sauce, parmesan cheese'],
             answer : 'Pasta, grilled mushrooms, crispy diced bacon, creamy sauce, parmesan cheese'
         },
+        {
+            category: "pasta",
+            question: "What meal comes with smoked salmon?",
+            options: ['Tati', 'Dali', 'Nicole', 'Blackbeard'],
+            answer : 'Tati'
+        },
 
-        // SOUPS //
+        // rosti
 
         {
             category: "pasta",
-            question: "What meal comes with Haystacks tomato soup?",
-            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
-            answer : 'Warhol'
+            question: "How many toasts between Benny Fit, Apollo 11, Disco Ball?",
+            options: ['4', '3', '2', '6'],
+            answer : '4'
         },
         {
             category: "pasta",
-            question: "What meal is: Pumpkin soup, sliced chorizo, grilled onion, turkish bread?",
-            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
-            answer : 'Mast'
+            question: "What meal is: Turkish bread, relish, wilted spinach, vege rosti, mash avo, chilli?",
+            options: ['Apollo 11', 'Disco Ball', 'Ripper', 'Benny Fit'],
+            answer : 'Apollo 11'
         },
         {
             category: "pasta",
-            question: "What meals are suitable for vegetarians?",
-            options: ['Jumping Frog, Warhol', 'Mast, Mizzen', 'Mizzen, Warhol', 'Warhol, Mast'],
-            answer : 'Jumping Frog, Warhol'
+            question: "Which of these meals is suitable for vegetarians?",
+            options: ['Benny Fit', 'Apollo 11', 'Disco Ball', 'Orange Progress'],
+            answer : 'Benny Fit'
         },
         {
             category: "pasta",
-            question: "What meal is served with sliced chicken breast?",
-            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
-            answer : 'Mizzen'
+            question: "Disco Ball comes with vege rosti, haloumi, poached egg, hollandaise sauce, toast, and...?",
+            options: ['Wilted spinach', 'Mash avo', 'Grilled tomato', 'Fried egg'],
+            answer : 'Wilted spinach'
         },
         {
             category: "pasta",
-            question: "What meals are suitable for vegetarians?",
-            options: ['Jumping Frog, Warhol', 'Mast, Mizzen', 'Mizzen, Warhol', 'Warhol, Mast'],
-            answer : 'Jumping Frog, Warhol'
-        },
-        {
-            category: "pasta",
-            question: "What are the ingredients of Jumping Frog?",
-            options: ['Pumpkin soup, turkish bread', 'Pumpkin soup, grilled chorizo, grilled onion, turkish bread', 'Haystacks tomato soup, croutons, puring cream', 'Pumkin soup, sliced chicken breast, grilled onion, pouring cream'],
-            answer : 'Pumpkin soup, turkish bread'
-        },
-        {
-            category: "pasta",
-            question: "Mizzen comes with: pumpkin soup, sliced chicken breast, grilled onion, and...??",
-            options: ['Pouring cream', 'Croutons', 'Turkish bread', 'Sliced chorizo'],
-            answer : 'Pouring cream'
+            question: "In which of these meals is chilli served?",
+            options: ['Apollo 11', 'Disco Ball', 'Nicole', 'Tati'],
+            answer : 'Apollo 11'
         },
 
         // PIES
@@ -491,19 +522,26 @@ const quizzes = {  // lista domande
         {
             category: "pasta",
             question: "What meal is: Steak and mushroom pie, mashed potato, gravy?",
-            options: ['Orange Progress', 'Barrett Browning', 'Ripper'],
+            options: ['Orange Progress', 'Barrett Browning', 'Ripper', 'Warhol'],
             answer : 'Barrett Browning'
         },
         {
             category: "pasta",
             question: "What meal is: Steak and mushroom pie, fries, gravy?",
-            options: ['Orange Progress', 'Barrett Browning', 'Ripper'],
+            options: ['Orange Progress', 'Barrett Browning', 'Ripper', 'Mizzen'],
             answer : 'Ripper'
-        },{
+        },
+        {
             category: "pasta",
             question: "What are the ingredients of Orange Progress?",
             options: ['Steak and mushroom pie, mashed potato, gravy', 'Steak and mushroom pie, fries, gravy', 'Steak and mushroom pie, gravy', 'Steak and mushroom pie, mashed potato, fries, gravy'],
             answer : 'Steak and mushroom pie, gravy'
+        },
+        {
+            category: "pasta",
+            question: "Is there any vegeterian pie?",
+            options: ['Yes, Orange Progress', 'Yes, Barret Browning', 'Yes, Ripper', 'No'],
+            answer : 'No'
         },
     ],
 
@@ -529,15 +567,159 @@ const quizzes = {  // lista domande
             options: ["Mayo, leaves, tomato, rib fillet 100g, grilled onion","Leaves, tomato, rib fillet 100g, grilled onion", "Buns, leaves, tomato, rib fillet 100g, bacon", "Buns, leaves, tomato, rib fillet 100g, bacon, grilled onion"],
             answer : "Leaves, tomato, rib fillet 100g, grilled onion"
         },
+        {
+            category: "burgers",
+            question: "What burger is suitable for vegetarians?",
+            options: ['99', 'BBBB', 'Robot', 'There is no any one'],
+            answer : "99"
+        },
+        {
+            category: "burgers",
+            question: "What sandwich is suitable for vegetarians?",
+            options: ['Ottoman', 'Ross', 'Club Sandwich', 'There is no any one'],
+            answer : "Ottoman"
+        },
+        {
+            category: "burgers",
+            question: "What wrap is suitable for vegetarians?",
+            options: ['Camber, Little John', 'Story, Big Bertha', 'Six Pack, Little John', 'There is no any one'],
+            answer : "Camber, Little John"
+        },
+        {
+            category: "burgers",
+            question: "What burgers doesn't come with salad?",
+            options: ['BBBB', '99', 'Robot', 'Thrilla from Manilla'],
+            answer : 'Thrilla from Manilla'
+        },
+        {
+            category: "burgers",
+            question: "How many bacons between Tarzan, Club Sandwich, Robot, Southern Cross?",
+            options: ['1','2','3','4'],
+            answer : '2'
+        },
+        {
+            category: "burgers",
+            question: "Which of these sandwich comes with turkish bread?",
+            options: ['Lincoln', 'Peggy', 'Roar', 'Club Sandwich'],
+            answer : "Lincoln"
+        },
+        {
+            category: "burgers",
+            question: "What wrap comes with barramundi?",
+            options: ['Powercat', 'Cheika', 'Border Leicester', 'Big Bertha'],
+            answer : "Powercat"
+        },
+        {
+            category: "burgers",
+            question: "How many chicken breasts in total between Big Bertha, Club Sandwich, Cheika, Scenic Rim?",
+            options: ['4','5','3','2'],
+            answer : "4"
+        },
+        {
+            category: "burgers",
+            question: "What sandwich comes with chicken breast, mash avo, green leaves, tomato, mayo?",
+            options: ['Peggy', 'Roar', 'Jack', 'Ross'],
+            answer : "Peggy"
+        },
+        {
+            category: "burgers",
+            question: "BBBB comes with buns, beef patty, bacon, fried egg, mayo, green leaves, tomato, fries, salad, and...?",
+            options: ['Grilled onion', 'Coleslaw', 'Cheddar cheese', 'Halloumi'],
+            answer : "Grilled onion"
+        },
+        {
+            category: "burgers",
+            question: "What sandwich comes with ham, cheddar cheese, tomato?",
+            options: ['Tarzan', 'Peggy', 'Jack', 'Ottoman'],
+            answer : "Tarzan"
+        },
+        {
+            category: "burgers",
+            question: "What burger is not served with fries?",
+            options: ['Southern Cross', 'JFK', 'Virgin', 'Everyone is served with fries'],
+            answer : "Southern Cross"
+        },
+        {
+            category: "burgers",
+            question: "What can you reccomend if someone asks for a toast with ham and cheese?",
+            options: ['Tarzan', 'Ottoman', 'Peggy', 'Jack'],
+            answer : "Tarzan"
+        },
+        {
+            category: "burgers",
+            question: "Is the low gluten bread an option for sandwiches and burgers?",
+            options: ['Yes', 'No', 'Only for sadwiches', 'Only for burgers'],
+            answer : "Yes"
+        },
+        {
+            category: "burgers",
+            question: "What wrap comes with Battered fish?",
+            options: ['Anne', 'Story', 'Cheika', 'Six Pack'],
+            answer : "Anne"
+        },
+        {
+            category: "burgers",
+            question: "What sandwich comes with sourdough toast?",
+            options: ['Roar', 'Ross', 'Jack', 'Ottoman'],
+            answer : "Roar"
+        },
+        {
+            category: "burgers",
+            question: "What burger is: Buns, beef patty, cheddar cheese, hash brown, fried egg, BBQ sauce, hollandaise sauce, picke, fries?",
+            options: ['Thrilla from Manilla', 'Scenic Rim', 'Gun Powder', 'Monroe'],
+            answer : "Thrilla from Manilla"
+        },
     ],
 
     omelette: [
         {
             category: "omelette",
-            question: "How many handfuls of fries between Southern Cross, Jack, Peggy and BBBB?",
-            options: ["1","2","3","4"],
-            answer : "2"
-        }
+            question: "Which of these meals comes as a scrambled eggs?",
+            options: ['Cathy Freeman', 'Superbrat', 'Sherpa', 'Cobalt'],
+            answer : 'Sherpa'
+        },
+        {
+            category: "omelette",
+            question: "Which of these meals comes with egg white?",
+            options: ['Barty', 'Cobalt', 'Mark Webber', 'Carbon Tax'],
+            answer : 'Cobalt'
+        },
+        {
+            category: "omelette",
+            question: "Which of these meals comes with 2 hash browns?",
+            options: ['Treasure Map', 'Sherpa', 'Super Brat', 'Carbon Tax'],
+            answer : 'Carbon Tax'
+        },
+        {
+            category: "omelette",
+            question: "Which of these meals is suitable for vegetarians?",
+            options: ['Cobalt', 'Stephanie Rice', 'Barty', 'Carbon Tax'],
+            answer : 'Barty'
+        },
+        {
+            category: "omelette",
+            question: "How many chicken breasts are served in a full serve of Stephanie Rice?",
+            options: ['1', '2','3', '4'],
+            answer : '2'
+        },
+        {
+            category: "omelette",
+            question: "How many toasts in total between Sherpa, half serve of Stephanie Rice, Elle Macpherson, Mark Webber?",
+            options: ['7', '6', '8', '5'],
+            answer : '7'
+        },
+        {
+            category: "omelette",
+            question: "Are all the omelettes available in a half serve too?",
+            options: ['Yes, all of them', 'No, no any of them', 'Yes, except Cathy Freeman, Cobalt, Super Brat', 'Yes except Treasure Map, Elle Macpherson, Mark Webber'],
+            answer : 'Yes, except Cathy Freeman, Cobalt, Super Brat'
+        },
+        {
+            category: "omelette",
+            question: "",
+            options: ['7', '6', '8', '5'],
+            answer : '7'
+        },
 
     ],
 
@@ -570,13 +752,13 @@ const quizzes = {  // lista domande
         },
         {
             category: "pork",
-            question: "In what of these meals mashed potato is served?",
+            question: "In which of these meals is mashed potato served?",
             options: ['Paddy 0', 'Tahiti', 'Abercorn', 'Police'],
             answer: "Tahiti"
         },
         {
             category: "pork",
-            question: "In what of these meals grilled onion is served?",
+            question: "In which of these meals is grilled onion served?",
             options: ['Mount Hood', 'Stockmans Treat', "Sheperd's Delight", "Shearer's Classic"],
             answer: "Sheperd's Delight"
         },
