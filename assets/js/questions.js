@@ -232,15 +232,15 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "How many scrambled eggs between True Blue, Peachy, 'Test Match', 'Bonza?",
-            options: ['Two full', 'One and half', 'One full', 'Two and half'],
-            answer: "Two full"
+            question: "How many scrambled eggs between True Blue, Peachy, Test Match, 'Bonza? (One = 1 egg)",
+            options: ['2', '4', '1', '3'],
+            answer: "4"
         },
         {
             category: "breakfast",
             question: "How many toasts between ET, KK, Endevour, Compton's Peak?",
-            options: ['Kiwi', 'Gateway', 'Gilbert', 'True Blue'],
-            answer: "Gilbert"
+            options: ['2', '3', '6', '4'],
+            answer: "4"
         },
         {
             category: "breakfast",
@@ -323,7 +323,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "steaks",
-            question: "What of these meals is available in a half serve too?",
+            question: "What of these meals is available in a half serve?",
             options: ['Julius', 'Cherry Blossom', 'Paper White', 'Roger Banister'],
             answer : 'Julius'
         },
@@ -383,9 +383,128 @@ const quizzes = {  // lista domande
         {
             category: "pasta",
             question: "What's inside Picasso?",
-            options: ["Pasta, prawns, sliced chorizo, onion, chilli, creamy sauce", "Pasta, prawns, spinach, onion, chilli, Haystacks", "Pasta, chorizo, prawns, monet tomatoes, onion, haystacks", "Pasta, grilled mushrooms, crispy bacon, creamy sauce"],
-            answer : "Pasta, prawns, spinach, onion, chilli, Haystacks"
-        }
+            options: ["Pasta, prawns, sliced chorizo, onion, chilli, creamy sauce", "Pasta, prawns, spinach, onion, chilli, Haystacks sauce", "Pasta, chorizo, prawns, monet tomatoes, onion, Haystacks sauce", "Pasta, grilled mushrooms, crispy bacon, creamy sauce"],
+            answer : "Pasta, prawns, spinach, onion, chilli, Haystacks sauce"
+        },
+        {
+            category: "pasta",
+            question: "What pasta is suitable for vegetarians?",
+            options: ["Blackbeard", 'Picasso', 'Tati', 'There is no any vegetarian pasta'],
+            answer : "There is no any vegetarian pasta"
+        },
+        {
+            category: "pasta",
+            question: "What pasta is available in a full and half serve too?",
+            options: ['All of them', 'Fotis, Tati, Nicole', 'Dali, Fotis, Tati', 'Picasso, Tati, Blackbeard'],
+            answer : "All of them"
+        },
+        {
+            category: "pasta",
+            question: "What meal is served with prawns?",
+            options: ['Blackbeard, Picasso, Tati', 'Tati, Nicole, Dali', 'Blackbeard, Dali, Picasso', 'Tati, Picasso, Fotis'],
+            answer : 'Blackbeard, Picasso, Tati'
+        },
+        {
+            category: "pasta",
+            question: "What meal is served with chicken?",
+            options: ['Dali, Fotis', 'Fotis, Blackbeard', 'Dali, Tati', 'Blackbeard, Picasso'],
+            answer : 'Dali, Fotis'
+        },
+        {
+            category: "pasta",
+            question: "Fotis comes with fettuccine, chicken breast, grilled mushroom, creamy sauce, parmesa cheese and...?",
+            options: ['Spinach', 'Smoked salmon', 'Prawns', 'Monet tomatoes'],
+            answer : 'Spinach'
+        },
+        {
+            category: "pasta",
+            question: "What's included in the creamy sauce?",
+            options: ['Onion', 'Monet tomatoes', 'Chilli', 'Only cooking cream'],
+            answer : 'Onion'
+        },
+        {
+            category: "pasta",
+            question: "What of these meals come with creamy Haystacks tomato sauce?",
+            options: ['Blackbeard, Picasso, Dali', 'Tati, Nicole, Fotis', 'Blackbeard, Dali, Tati', 'Tati, Picasso, Fotis'],
+            answer : 'Blackbeard, Picasso, Dali'
+        },
+        {
+            category: "pasta",
+            question: "How many grams of chicken breast are served in a full serve of Fotis?",
+            options: ['200g', '100g', '150g', '300g'],
+            answer : '200g'
+        },
+        {
+            category: "pasta",
+            question: "What are the ingredients of Nicole?",
+            options: ['Pasta, grilled mushrooms, crispy diced bacon, creamy sauce, parmesan cheese', 'Pasta, sliced chicken breast, spinach, Haystacks sauce', 'Pasta, prawns, spinach, onion, Haystacks sauce, parmesan cheese', 'Pasta, grilled mushrooms, sliced chorizo, creamy sauce, parmesan cheese'],
+            answer : 'Pasta, grilled mushrooms, crispy diced bacon, creamy sauce, parmesan cheese'
+        },
+
+        // SOUPS //
+
+        {
+            category: "pasta",
+            question: "What meal comes with Haystacks tomato soup?",
+            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
+            answer : 'Warhol'
+        },
+        {
+            category: "pasta",
+            question: "What meal is: Pumpkin soup, sliced chorizo, grilled onion, turkish bread?",
+            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
+            answer : 'Mast'
+        },
+        {
+            category: "pasta",
+            question: "What meals are suitable for vegetarians?",
+            options: ['Jumping Frog, Warhol', 'Mast, Mizzen', 'Mizzen, Warhol', 'Warhol, Mast'],
+            answer : 'Jumping Frog, Warhol'
+        },
+        {
+            category: "pasta",
+            question: "What meal is served with sliced chicken breast?",
+            options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
+            answer : 'Mizzen'
+        },
+        {
+            category: "pasta",
+            question: "What meals are suitable for vegetarians?",
+            options: ['Jumping Frog, Warhol', 'Mast, Mizzen', 'Mizzen, Warhol', 'Warhol, Mast'],
+            answer : 'Jumping Frog, Warhol'
+        },
+        {
+            category: "pasta",
+            question: "What are the ingredients of Jumping Frog?",
+            options: ['Pumpkin soup, turkish bread', 'Pumpkin soup, grilled chorizo, grilled onion, turkish bread', 'Haystacks tomato soup, croutons, puring cream', 'Pumkin soup, sliced chicken breast, grilled onion, pouring cream'],
+            answer : 'Pumpkin soup, turkish bread'
+        },
+        {
+            category: "pasta",
+            question: "Mizzen comes with: pumpkin soup, sliced chicken breast, grilled onion, and...??",
+            options: ['Pouring cream', 'Croutons', 'Turkish bread', 'Sliced chorizo'],
+            answer : 'Pouring cream'
+        },
+
+        // PIES
+
+        {
+            category: "pasta",
+            question: "What meal is: Steak and mushroom pie, mashed potato, gravy?",
+            options: ['Orange Progress', 'Barrett Browning', 'Ripper'],
+            answer : 'Barrett Browning'
+        },
+        {
+            category: "pasta",
+            question: "What meal is: Steak and mushroom pie, fries, gravy?",
+            options: ['Orange Progress', 'Barrett Browning', 'Ripper'],
+            answer : 'Ripper'
+        },{
+            category: "pasta",
+            question: "What are the ingredients of Orange Progress?",
+            options: ['Steak and mushroom pie, mashed potato, gravy', 'Steak and mushroom pie, fries, gravy', 'Steak and mushroom pie, gravy', 'Steak and mushroom pie, mashed potato, fries, gravy'],
+            answer : 'Steak and mushroom pie, gravy'
+        },
     ],
 
     burgers: [
