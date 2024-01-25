@@ -51,6 +51,7 @@ function rightAnswer(){
     let answerOne = document.createElement('p');
     answerOne.textContent = "Correct!";
     answerOne.className = "answer";
+    answerOne.style.color = "lightgreen";
     optionList.appendChild(answerOne);
 }
 
@@ -58,6 +59,7 @@ function wrongAnswer(){
     let answerTwo = document.createElement('p');
     answerTwo.textContent = "Wrong!";
     answerTwo.className = "answer";
+    answerTwo.style.color = "red";
     optionList.appendChild(answerTwo);
 }
 

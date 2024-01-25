@@ -32,7 +32,7 @@ body, html{
 }
 
 body{
-    background-image: url(../img/4.jpg);
+    background-image: url(../img/5.jpg);
     background-size: 100vh;
     background-position: bottom;
     background-position-y: 80%;
@@ -181,7 +181,7 @@ h2{
 
 .answer{
     position: absolute;
-    top: 100%;
+    top: 100.5%;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 20px;

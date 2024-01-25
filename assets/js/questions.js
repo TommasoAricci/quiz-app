@@ -11,14 +11,8 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "What's the difference between Sleepy and Minnie?",
-            options: ["Sleepy has maple syrup, Minnie has berry compote", "Sleepy has only additional ice cream", "Sleepy has ice cream, Minnie has strawberry", "Sleepy has only additional maple syrup"],
-            answer: "Sleepy has ice cream, Minnie has strawberry"
-        },
-        {
-            category: "kids",
-            question: "Is the garnish served in the kids meals?",
-            options: ["Yes", "No", "Yes except the sweets", "It's up to me"],
-            answer: "No"
+            options: ["Sleepy has maple syrup, Minnie has berry compote", "Sleepy has only additional ice cream", "Sleepy has ice cream, Minnie has strawberries", "Sleepy has only additional maple syrup"],
+            answer: "Sleepy has ice cream, Minnie has strawberries"
         },
         {
             category: "kids",
@@ -41,26 +35,14 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "What comes with Bell Song?",
-            options: ["Waffle, strawberry, caramel sauce","Pancakes, strawberry, caramel sauce", "Waffle, whipped cream, strawberry", "Pancakes, strawberry, maple syrup"],
-            answer: "Waffle, strawberry, caramel sauce"
+            options: ["Waffle, strawberries, caramel sauce","Pancakes, strawberries, caramel sauce", "Waffle, whipped cream, strawberries", "Pancakes, strawberries, maple syrup"],
+            answer: "Waffle, strawberries, caramel sauce"
         },
         {
             category: "kids",
             question: "What meal is: Chicken nuggets (5), hash brown, tomato sauce?",
             options: ["Poseidon", "The Welcome Stranger", "Dorothy", "Lego"],
             answer: "The Welcome Stranger"
-        },
-        {
-            category: "kids",
-            question: "BBC comes with baked beans, melted pizza cheese, and...?",
-            options: ["Nothing else", "Toast", "Gravy", "Bacon"],
-            answer: "Toast"
-        },
-        {
-            category: "kids",
-            question: "Lego comes with battered fish, fries, and...?",
-            options: ["Nothing else", "Tartare sauce", "Toast", "Lemon wedge"],
-            answer: "Nothing else"
         },
         {
             category: "kids",
@@ -79,12 +61,6 @@ const quizzes = {  // lista domande
             question: "How many handfuls of fries between Poseidon, Silver, COT, The Welcome Stranger?",
             options: ["4", "3", "2", "1"],
             answer: "2"
-        },
-        {
-            category: "kids",
-            question: "In which meal is maple syrup not served?",
-            options: ["Naughty", 'Sleepy', 'Minnie Mouse', 'Bell Song'],
-            answer: "Bell Song"
         },
 
         // Oats
@@ -109,9 +85,63 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "Base Line comes with Porridge, berry compote, strawberry, and...?",
+            question: "Base Line comes with Porridge, berry compote, strawberries, and...?",
             options: ['Pouring cream', 'Maple syrup', 'Yoghurt', 'Nuts'],
             answer: "Pouring cream"
+        },
+        {
+            category: "kids",
+            question: "What meal is: Bircher, fruit salad, rasperries, berry compote, yoghurt, nuts?",
+            options: ['Dennis Connor', '12 Meters', 'Brixton', 'Syd Fisher'],
+            answer: "Brixton"
+        },
+
+        // starters
+
+        {
+            category: "kids",
+            question: "Which of these meals is available in a half serve too?",
+            options: ['Arctic', 'Googly', 'Poutine', 'Pin'],
+            answer: "Pin"
+        },
+        {
+            category: "kids",
+            question: "What's the difference between Arctic and Washer?",
+            options: ['Arctic comes with calamari, Washer with onion rings', 'Washer comes with calamari, Arctic with onion rings', 'Washer comes with aioli sauce, Arctic with sweet chilli mayo', "Arctic comes with green leaves, Washer doesn't"],
+            answer: "'Arctic comes with calamari, Washer with onion rings"
+        },
+        {
+            category: "kids",
+            question: "What fries is Googly served with?",
+            options: ['Showstring', 'Waffled', 'Sweet potato', 'It is not served with fries'],
+            answer: "Waffled"
+        },
+        {
+            category: "kids",
+            question: "What's the difference between Heaven and Pin?",
+            options: ['Pin has additional pizza cheese and crispy bacon', 'Heaven has additional pizza cheese and crispy bacon', 'Heaven has only 3 slices, Pin has 6', 'Pin has only 3 slices, Heaven has 6'],
+            answer: 'Pin has additional pizza cheese and crispy bacon'
+        },
+        {
+            category: "kids",
+            question: "What is Heaven?",
+            options: ['Garlic bread', 'Hash browns', 'Garlic bread with pizza cheese and crispy bacon', 'Chicken nuggets, fries, sweet chilli mayo'],
+            answer: "Garlic bread"
+        },
+
+        
+        /*
+        {
+            category: "kids",
+            question: "In which meal is maple syrup not served?",
+            options: ["Naughty", 'Sleepy', 'Minnie Mouse', 'Bell Song'],
+            answer: "Bell Song"
+        },
+        {
+            category: "kids",
+            question: "Is the garnish served in the kids meals?",
+            options: ["Yes", "No", "Yes except the sweets", "It's up to me"],
+            answer: "No"
         },
         {
             category: "kids",
@@ -121,10 +151,18 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "What meal is: Bircher, fruit salad, rasperries, berry compote, yoghurt, nuts?",
-            options: ['Dennis Connor', '12 Meters', 'Brixton', 'Syd Fisher'],
-            answer: "Brixton"
-        },        
+            question: "Lego comes with battered fish, fries, and...?",
+            options: ["Nothing else", "Tartare sauce", "Toast", "Lemon wedge"],
+            answer: "Nothing else"
+        },
+        {
+            category: "kids",
+            question: "BBC comes with baked beans, melted pizza cheese, and...?",
+            options: ["Nothing else", "Toast", "Gravy", "Bacon"],
+            answer: "Toast"
+        },
+
+        */
     ],
     
     breakfast: [
@@ -390,7 +428,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "steaks",
-            question: "What are the same ingredients for Skippy and Paper White?",
+            question: "What are the common ingredients for Skippy and Paper White?",
             options: ['Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts', 'Monet tomatoes, crispy bacon, italian dressing', 'Green leaves, coleslaw, poached egg, parmesan dressing, parmesan', 'Monet tomatoes, italian dressing, hollandaise sauce, nuts'],
             answer : 'Green leaves, coleslaw, monet tomatoes, italian dressing, mash avo, fresh chilli, nuts'
         },
@@ -563,7 +601,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "burgers",
-            question: "What are the same ingredients for Ross and Monroe?",
+            question: "What are the common ingredients for Ross and Monroe?",
             options: ["Mayo, leaves, tomato, rib fillet 100g, grilled onion","Leaves, tomato, rib fillet 100g, grilled onion", "Buns, leaves, tomato, rib fillet 100g, bacon", "Buns, leaves, tomato, rib fillet 100g, bacon, grilled onion"],
             answer : "Leaves, tomato, rib fillet 100g, grilled onion"
         },
@@ -641,7 +679,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "burgers",
-            question: "What can you reccomend if someone asks for a toast with ham and cheese?",
+            question: "What meal can you reccomend if someone asks for a toast with ham and cheese?",
             options: ['Tarzan', 'Ottoman', 'Peggy', 'Jack'],
             answer : "Tarzan"
         },
@@ -716,9 +754,87 @@ const quizzes = {  // lista domande
         },
         {
             category: "omelette",
-            question: "",
-            options: ['7', '6', '8', '5'],
-            answer : '7'
+            question: "What are the ingredients of Barty?",
+            options: ['Sliced chicken breast, feta, spinach, toast', 'Spinach, tomato, onion, grilled mushrooms, toast', 'Ham, cheddar cheese, tomato, onion, toast', 'Monet tomatoes, crispy bacon, coleslaw, toast'],
+            answer : 'Spinach, tomato, onion, grilled mushrooms, toast'
+        },
+        {
+            category: "omelette",
+            question: "What omelette is: Chorizo, onion, spinach, cheddar cheese, toast?",
+            options: ['Treasure Map', 'Stephanie Rice', 'Carbon Tax', 'Mark Webber'],
+            answer : 'Barty'
+        },
+
+        // french toast
+
+        {
+            category: "omelette",
+            question: "What meal comes with strawberries?",
+            options: ['Kayla', 'Kalpana', 'Samoa', 'Yuka'],
+            answer : 'Yuka'
+        },
+        {
+            category: "omelette",
+            question: "What meal doesn't come with granish berry compote?",
+            options: ['Kayla', 'Kalpana', 'Samoa', 'Yuka'],
+            answer : 'Samoa'
+        },
+        {
+            category: "omelette",
+            question: "Do french toast usually come with icing sugar on top?",
+            options: ['Yes', 'No', 'Only in Kayla and Kalpana', 'Only in Yuka, Kayla and Kalpana'],
+            answer : 'Yes'
+        },
+        {
+            category: "omelette",
+            question: "What meal comes with bacon?",
+            options: ['Yuka', 'Kalpana', 'Samoa', 'Kayla'],
+            answer : 'Samoa'
+        },
+        {
+            category: "omelette",
+            question: "What meal is: French Toast, bacon, scrambled eggs, maple syrup",
+            options: ['Samoa', 'Yuka', 'Kalpana', 'Kayla'],
+            answer : 'Samoa'
+        },
+
+        // crepes
+
+        {
+            category: "omelette",
+            question: "What meal comes with pork belly?",
+            options: ['Duffel Coat', 'Red Hat', 'House of Commons'],
+            answer : 'Red Hat'
+        },
+        {
+            category: "omelette",
+            question: "How many crepes are usually served?",
+            options: ['3', '2', '5', '4'],
+            answer : '3'
+        },
+        {
+            category: "omelette",
+            question: "What are the ingredients of House of Commons?",
+            options: ['Scrambled eggs mix with crispy bacon, spinach, cheddar cheese', 'Strawberries, berry compote, whipped cream, warm caramel sauce', 'Pork belly, poached eggs, hollandaise sauce', 'Scrambled eggs mix with crispy bacon, spinach, cheddar cheese'],
+            answer : 'Scrambled eggs mix with crispy bacon, spinach, cheddar cheese'
+        },
+        {
+            category: "omelette",
+            question: "What are the common ingredients used for Duffel Coat and Yuka?",
+            options: ['Strawberries, berry compote, whipped cream', 'Strawberries, maple syrup', 'Raspberries, whipped cream, maple syrup', 'Maple syrup, berry compote'],
+            answer : 'Strawberries, berry compote, whipped cream'
+        },
+        {
+            category: "omelette",
+            question: "Is a half serve of crepes available?",
+            options: ['Yes', 'No', 'Only for Red Hat', 'Only for House of Commons'],
+            answer : 'No'
+        },
+        {
+            category: "omelette",
+            question: "What crepes comes with poached eggs?",
+            options: ['Red Hat', 'House of Commons', 'Duffel Coat', 'No one comes with poached eggs'],
+            answer : 'Red Hat'
         },
 
     ],
@@ -726,10 +842,45 @@ const quizzes = {  // lista domande
     fish: [
         {
             category: "fish",
-            question: "How many handfuls of fries between Southern Cross, Jack, Peggy and BBBB?",
-            options: ["1","2","3","4"],
-            answer : "2"
-        }
+            question: "What's the difference between South Island and Pacific?",
+            options: ['Pacific comes with additional six calamari', 'South Island comes with tartare sauce, Pacific with aioli', 'Pacific has only one battered fish', "South Island comes with salad, Pacific doesn't"],
+            answer : 'Pacific comes with additional six calamari'
+        },
+        {
+            category: "fish",
+            question: "Which of these meals is served with salad?",
+            options: ['S&P', 'South Island', 'Tuber', 'Ashes'],
+            answer : 'S&P'
+        },
+        {
+            category: "fish",
+            question: "What meal is: Grilled salmon or barramundi, mashed potato, rocky carrots, yoghurt and nuts, lemon wedge?",
+            options: ['Ozzy Open', 'Eureka', 'Tuber', 'Ashes'],
+            answer : ''
+        },
+        {
+            category: "fish",
+            question: "Which of these meals is served with salad?",
+            options: ['S&P', 'South Island', 'Tuber', 'Ashes'],
+            answer : 'S&P'
+        },
+        {
+            category: "fish",
+            question: "How many rocky carrots in total between Tuber, Hammer Throw, Whistle Stop, Sound of Music?",
+            options: ['6', '9', '12', 3],
+            answer : '6'
+        },
+
+        // chicken
+
+        {
+            category: "fish",
+            question: "What meal is: Waffle, fried chicken, bacon, poached egg, hollandaise sauce, maple syrup?",
+            options: ['Whistle Stop', 'Raft', 'Andes', 'Dresden'],
+            answer : 'Raft'
+        },
+
+
 
     ],
 

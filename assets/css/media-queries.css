@@ -96,7 +96,11 @@
 
     #questionText{
         width: 70%;
-        font-size: 22px;
+        font-size: 21px;
+    }
+
+    #option-list .option{
+        font-size: 13px;
     }
 
     .scoreText{
