@@ -74,7 +74,7 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "What the ingredients of Shooter?",
-            options: ['Bircher, berry compote, yoghurt, nuts', 'Granola, berry compote, yoghurt, nuts', 'Bircher, yoghurt, maple syrup, pouring cream', 'Bircher, rasperries, berry compote, yoghurt, nuts'],
+            options: ['Bircher, berry compote, yoghurt, nuts', 'Granola, berry compote, yoghurt, nuts', 'Bircher, yoghurt, maple syrup, pouring cream', 'Bircher, raspberries, berry compote, yoghurt, nuts'],
             answer: "Bircher, berry compote, yoghurt, nuts"
         },
         {
@@ -91,7 +91,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "What meal is: Bircher, fruit salad, rasperries, berry compote, yoghurt, nuts?",
+            question: "What meal is: Bircher, fruit salad, raspberries, berry compote, yoghurt, nuts?",
             options: ['Dennis Connor', '12 Meters', 'Brixton', 'Syd Fisher'],
             answer: "Brixton"
         },
@@ -145,7 +145,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "In which of these meals are rasperries served?",
+            question: "In which of these meals are raspberries served?",
             options: ['Base Line', 'Syd Fisher', 'Shooter', 'Brixton'],
             answer: "Brixton"
         },
@@ -222,7 +222,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "Merino comes with Pulled lamb, fried egg, bacon, hash browns, sausages, grilled tomato, toast, and...?",
+            question: "Merino comes with pulled lamb, fried egg, bacon, hash browns, sausages, grilled tomato, toast, and...?",
             options: ['Grilled onion', 'Grilled mushrooms', 'Relish', 'Gravy'],
             answer: "Gravy"
         },
@@ -855,20 +855,26 @@ const quizzes = {  // lista domande
         {
             category: "fish",
             question: "What meal is: Grilled salmon or barramundi, mashed potato, rocky carrots, yoghurt and nuts, lemon wedge?",
-            options: ['Ozzy Open', 'Eureka', 'Tuber', 'Ashes'],
-            answer : ''
-        },
-        {
-            category: "fish",
-            question: "Which of these meals is served with salad?",
-            options: ['S&P', 'South Island', 'Tuber', 'Ashes'],
-            answer : 'S&P'
+            options: ['Lockyer Valley', 'Andes', 'Tuber', 'Ashes'],
+            answer : 'Tuber'
         },
         {
             category: "fish",
             question: "How many rocky carrots in total between Tuber, Hammer Throw, Whistle Stop, Sound of Music?",
             options: ['6', '9', '12', 3],
             answer : '6'
+        },
+        {
+            category: "fish",
+            question: "What meal comes with only one battered fish?",
+            options: ['Billy & Chips', 'South Island', 'Pacific', 'S&P'],
+            answer : 'Billy & Chips'
+        },
+        {
+            category: "fish",
+            question: "What of these meals is served with battered fish?",
+            options: ['Billy & Chips, South Island, Pacific', 'Tuber, Pacific, South Island', 'S&P, South Island, Billy & Chips', 'Ashes, S&P, Pacific'],
+            answer : 'Billy & Chips, South Island, Pacific'
         },
 
         // chicken
@@ -879,7 +885,96 @@ const quizzes = {  // lista domande
             options: ['Whistle Stop', 'Raft', 'Andes', 'Dresden'],
             answer : 'Raft'
         },
+        {
+            category: "fish",
+            question: "What meals comes as a wrap?",
+            options: ['Lockyer Walley', 'Miss Watson', 'Whistle Stop', 'Dresden'],
+            answer : 'Lockyer Walley'
+        },
+        {
+            category: "fish",
+            question: "Miss Watson comes with mashed potato, fried chicken, gravy, and...?",
+            options: ['Grilled onion', 'Toast', 'poaxhed egg', 'Fries'],
+            answer : 'Grilled onion'
+        },
+        {
+            category: "fish",
+            question: "What meal doesn't come with fries?",
+            options: ['Sound of Music', 'Whistle Stop', 'Dresden', 'Andes'],
+            answer : 'Andes'
+        },
+        {
+            category: "fish",
+            question: "What are the ingredients of Sound of Music?",
+            options: ['Chicken Schnitzel, pizza cheese, gravy, fries', 'Fried chicken, pizza cheese, gravy, fries', 'Fried chicken, fries, pickle, peri peri mayo', 'Chicken schnitzel, waffled fries, rocky carrots, creamy mushrooms'],
+            answer : 'Chicken Schnitzel, pizza cheese, gravy, fries'
+        },
+        {
+            category: "fish",
+            question: "What sauce does Dresden come with?",
+            options: ['Aioli', 'Peri peri mayo', 'Sweet chilli mayo', 'Creamy parmesan dressing'],
+            answer : 'Sweet chilli mayo'
+        },
+        {
+            category: "fish",
+            question: "What of these meals comes with gravy?",
+            options: ['Miss Watson', 'Hammer Throw', 'Dresden', 'Raft'],
+            answer : 'Miss Watson'
+        },
+    
+        // Fries
 
+        {
+            category: "fish",
+            question: "In what meal four handfuls of fries are served?",
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
+            answer : 'Four handfuls of fries are not served'
+        },
+        {
+            category: "fish",
+            question: "In what meal two handfuls of fries are served?",
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
+            answer : 'Colin Meads'
+        },
+        {
+            category: "fish",
+            question: "In what meal three handfuls of fries are served?",
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
+            answer : 'Sid Going'
+        },
+        {
+            category: "fish",
+            question: "In what meal one handful of fries is served?",
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
+            answer : 'Buck Shelford'
+        },
+        {
+            category: "fish",
+            question: "What sauce do fries normally come with?",
+            options: ['Aioli', 'Tomato sauce', 'Sweet chilli mayo', 'Tartare'],
+            answer : 'Aioli'
+        },
+
+        // Croissants
+
+        {
+            category: "fish",
+            question: "What are the ingredients of CR7?",
+            options: ['Toasted croissant', 'Toasted croissant, ham, cheddar cheese, tomato', 'Toasted croissant, bacon, cheddar cheese, hash brown', 'Toaste croissant, cheddar cheese'],
+            answer : 'Toasted croissant'
+        },
+        {
+            category: "fish",
+            question: "What meal comes with hash brown?",
+            options: ['Tricolour', 'CR7', 'Raft', 'Tuber'],
+            answer : 'Tricolour'
+        },
+        {
+            category: "fish",
+            question: "What is the difference between Tricolour and Napoleon?",
+            options: ['Tricolour has hash brown and bacon, Napoleon has ham and tomato', 'Napoleon has hash brown and bacon, Tricolour has ham and tomato', "Tricolour comes with cheddar cheese, Napoleon doesn't", "Napoleon comes with bacon, Tricolour doesn't"],
+            answer : 'Tricolour has hash brown and bacon, Napoleon has ham and tomato'
+        },
 
 
     ],
@@ -887,11 +982,130 @@ const quizzes = {  // lista domande
     sweets: [
         {
             category: "sweets",
-            question: "How many handfuls of fries between Southern Cross, Jack, Peggy and BBBB?",
-            options: ["1","2","3","4"],
-            answer : "2"
-        }
+            question: "What is ACDC?",
+            options: ['Muffin apple crumble', 'Muffin triple chocolate', 'Apple slice', 'Muffin raspberry'],
+            answer : "Muffin apple crumble"
+        },
+        {
+            category: "sweets",
+            question: "What of these meals are served in a half serve too?",
+            options: ['Kent, Oscar, Sunmaid, Ascot', 'Oscar, Sunmaid, Macca', 'Go Between, New Baby, ACDC', 'Kent, Oscar, Tinker Bell, Ascot'],
+            answer : "Kent, Oscar, Sunmaid, Ascot"
+        },
+        {
+            category: "sweets",
+            question: "What does Ascot come with?",
+            options: ['Whipped cream', 'Nothing else', 'Maple syrup', 'Berry compote'],
+            answer : "Whipped cream"
+        },
+        {
+            category: "sweets",
+            question: "Macca comes with Cheesecake, nuts, berry compote, whipped cream, and...?",
+            options: ['Warm caramel sauce', 'Maple syrup', 'Fruit salad', 'Ice cream'],
+            answer : "Warm caramel sauce"
+        },
+        {
+            category: "sweets",
+            question: "What sweet is: Sticky date pudding, ice cream, berry compote, nuts?",
+            options: ['Oxbow', 'Tinker Bell', 'Zest', 'Manos'],
+            answer : "Oxbow"
+        },
+        {
+            category: "sweets",
+            question: "What sweet is: Banoffee tart, garnish berry compote?",
+            options: ['Oxbow', 'Rapture', 'Zest', 'Manos'],
+            answer : "Manos"
+        },
+        {
+            category: "sweets",
+            question: "What does New Baby comes with?",
+            options: ['Nothing else', 'Berry compote', 'Ice cream', 'Warm caramel sauce'],
+            answer : "Nothing else"
+        },
+        {
+            category: "sweets",
+            question: "What of these meals comes with two ice creams?",
+            options: ['Go Between', 'Alisha Doubled Back' ,'Tower Bridge', "It doesn't exist"],
+            answer : "Go Between"
+        },
 
+        // pancakes
+
+        {
+            category: "sweets",
+            question: "What's the difference between Megan and Kee?",
+            options: ['Kee has additional berry compote and ice cream', 'Megan has additional berry compote and ice cream', 'Kee comes with additional bacon, yoghurt and nuts', 'Megan has an additional scrambled egg'],
+            answer : "Kee has additional berry compote and ice cream"
+        },
+        {
+            category: "sweets",
+            question: "What of these meals comes with two bacons?",
+            options: ['Mountie', 'Vancouver', 'Alisha Doubled Back', 'Harriet'],
+            answer : "Mountie"
+        },
+        {
+            category: "sweets",
+            question: "What meal is: Pancakes, ice cream, berry compote, strawberries, nuts, warm caramel sauce",
+            options: ['Tower Bridge', 'Stirling Moss', 'Mountie', 'Megan'],
+            answer : "Tower Bridge"
+        },
+        {
+            category: "sweets",
+            question: "Vancouver comes with pancakes, yoghurt, nuts, malpe syrup, and...?",
+            options: ['Bacon', 'Scrambled egg', 'Ice cream', 'Warm caramel sauce'],
+            answer : "Bacon"
+        },
+
+        // waffles and fruit
+
+        {
+            category: "sweets",
+            question: "What is Michael Schumacher?",
+            options: ['Waffles, whipped cream, strawberries, maple syrup', 'Waffle, ice cream, maple syrup, berry compote', 'Waffles, bacons, scrambled eggs', 'Waffles, ice cream, strawberries, berry compote, warm caramel sauce'],
+            answer : "Waffles, whipped cream, strawberries, maple syrup"
+        },
+        {
+            category: "sweets",
+            question: "What meal is: Waffle, ice cream, maple syrup, berry compote?",
+            options: ['Vancouver', 'Kee', 'Stirling Moss', 'Harriet'],
+            answer : "Mountie"
+        },
+        {
+            category: "sweets",
+            question: "What of these meals doesn't come with nuts?",
+            options: ['Alisha Doubled Back', 'Toronto', 'Ivy'],
+            answer : "Mountie"
+        },
+        {
+            category: "sweets",
+            question: "Ivy comes with Mash avo, wilted spinach, fruit salad, raspberries, toast, and...?",
+            options: ['Grilled tomatoes', 'Whipped cream', 'Ice cream', 'Bacon'],
+            answer : "Grilled tomatoes"
+        },
+        {
+            category: "sweets",
+            question: "How many bacons between Mountie, Vancouver, Stirling Moss, Harriet?",
+            options: ['5', '6', '2', '3'],
+            answer : "5"
+        },
+        {
+            category: "sweets",
+            question: "In what meal is berry compote not served?",
+            options: ['Stirling Moss', 'Megan', 'Bugs Bunny', 'Macca'],
+            answer : "Stirling Moss"
+        },
+        {
+            category: "sweets",
+            question: "Are all the waffles meals served with two waffles?",
+            options: ['Yes', 'Yes, except Harriet', 'Yes, except Michael Schumacher', 'Yes, except Tower Bridge'],
+            answer : "Yes, except Harriet"
+        },
+        {
+            category: "sweets",
+            question: "What meal is: Fruit salad, raspberries, berry compote, yoghurt, nuts?",
+            options: ['Toronto', 'Ivy', 'Go Between', 'Rapture'],
+            answer : "Toronto"
+        },
     ],
 
     pork: [
@@ -1049,8 +1263,3 @@ const quizzes = {  // lista domande
         }
     ]
 }  */ 
-
-
-
-
-// sistemare home e categorie - inserire domande - media queries
