@@ -5,7 +5,7 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "What's inside Woody?",
-            options: ["Burger buns, cheddar cheese, beef patty, fries", "Burger buns, BBQ sauce, chicken breast", "Burger buns, fried chicken, fries", "English muffin, Hollandaise sauce, bacon"],
+            options: ["Burger buns, cheddar cheese, beef patty, fries", "Burger buns, BBQ sauce, chicken breast", "Burger buns, fried chicken, fries", "English muffin, hollandaise sauce, bacon"],
             answer: "Burger buns, cheddar cheese, beef patty, fries"
         },
         {
@@ -34,7 +34,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "What comes with Bell Song?",
+            question: "What does Bell Song come with?",
             options: ["Waffle, strawberries, caramel sauce","Pancakes, strawberries, caramel sauce", "Waffle, whipped cream, strawberries", "Pancakes, strawberries, maple syrup"],
             answer: "Waffle, strawberries, caramel sauce"
         },
@@ -46,7 +46,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "How many bacon between Doc, Donald Duck, Naughty, Sail Boat?",
+            question: "How many bacons between Doc, Donald Duck, Naughty, Sail Boat?",
             options: ["4", "3", "2", "1"],
             answer: "3"
         },
@@ -73,7 +73,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "What the ingredients of Shooter?",
+            question: "What are the ingredients of Shooter?",
             options: ['Bircher, berry compote, yoghurt, nuts', 'Granola, berry compote, yoghurt, nuts', 'Bircher, yoghurt, maple syrup, pouring cream', 'Bircher, raspberries, berry compote, yoghurt, nuts'],
             answer: "Bircher, berry compote, yoghurt, nuts"
         },
@@ -85,7 +85,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "kids",
-            question: "Base Line comes with Porridge, berry compote, strawberries, and...?",
+            question: "Base Line comes with porridge, berry compote, strawberries, and...?",
             options: ['Pouring cream', 'Maple syrup', 'Yoghurt', 'Nuts'],
             answer: "Pouring cream"
         },
@@ -108,7 +108,7 @@ const quizzes = {  // lista domande
             category: "kids",
             question: "What's the difference between Arctic and Washer?",
             options: ['Arctic comes with calamari, Washer with onion rings', 'Washer comes with calamari, Arctic with onion rings', 'Washer comes with aioli sauce, Arctic with sweet chilli mayo', "Arctic comes with green leaves, Washer doesn't"],
-            answer: "'Arctic comes with calamari, Washer with onion rings"
+            answer: "Arctic comes with calamari, Washer with onion rings"
         },
         {
             category: "kids",
@@ -119,7 +119,7 @@ const quizzes = {  // lista domande
         {
             category: "kids",
             question: "What's the difference between Heaven and Pin?",
-            options: ['Pin has additional pizza cheese and crispy bacon', 'Heaven has additional pizza cheese and crispy bacon', 'Heaven has only 3 slices, Pin has 6', 'Pin has only 3 slices, Heaven has 6'],
+            options: ['Pin has additional pizza cheese and crispy bacon', 'Heaven has additional pizza cheese and crispy bacon', 'Heaven has only three slices, Pin has six', 'Pin has only three slices, Heaven has six'],
             answer: 'Pin has additional pizza cheese and crispy bacon'
         },
         {
@@ -216,7 +216,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "What meals come with relish?",
+            question: "What of these meals comes with relish?",
             options: ['Zendaye, Jim hawkins,', 'Emirates, Winx', 'Zendaye, Winx', "Compton's Peak, Zendaye"],
             answer: "Zendaye, Winx"
         },
@@ -270,7 +270,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "breakfast",
-            question: "How many scrambled eggs between True Blue, Peachy, Test Match, 'Bonza? (One = 1 egg)",
+            question: "How many scrambled eggs between True Blue, Peachy, Test Match, Bonza? (1 = one egg)",
             options: ['2', '4', '1', '3'],
             answer: "4"
         },
@@ -316,7 +316,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "steaks",
-            question: "What meal comes with salad?",
+            question: "What of these meals comes with salad?",
             options: ["King Charles", 'London', 'Highfields', 'Empire State Building'],
             answer : "King Charles"
         },
@@ -389,7 +389,7 @@ const quizzes = {  // lista domande
 
         {
             category: "steak",
-            question: "What meal comes with Haystacks tomato soup?",
+            question: "What of these meals comes with Haystacks tomato soup?",
             options: ['Jumping Frog', 'Mast', 'Mizzen', 'Warhol'],
             answer : 'Warhol'
         },
@@ -517,7 +517,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "pasta",
-            question: "What meal comes with smoked salmon?",
+            question: "What of these meals comes with smoked salmon?",
             options: ['Tati', 'Dali', 'Nicole', 'Blackbeard'],
             answer : 'Tati'
         },
@@ -769,7 +769,7 @@ const quizzes = {  // lista domande
 
         {
             category: "omelette",
-            question: "What meal comes with strawberries?",
+            question: "What of these meals comes with strawberries?",
             options: ['Kayla', 'Kalpana', 'Samoa', 'Yuka'],
             answer : 'Yuka'
         },
@@ -787,7 +787,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "omelette",
-            question: "What meal comes with bacon?",
+            question: "What of these meals comes with bacon?",
             options: ['Yuka', 'Kalpana', 'Samoa', 'Kayla'],
             answer : 'Samoa'
         },
@@ -802,7 +802,7 @@ const quizzes = {  // lista domande
 
         {
             category: "omelette",
-            question: "What meal comes with pork belly?",
+            question: "What of these meals comes with pork belly?",
             options: ['Duffel Coat', 'Red Hat', 'House of Commons'],
             answer : 'Red Hat'
         },
@@ -866,7 +866,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "fish",
-            question: "What meal comes with only one battered fish?",
+            question: "What of these meals comes with only one battered fish?",
             options: ['Billy & Chips', 'South Island', 'Pacific', 'S&P'],
             answer : 'Billy & Chips'
         },
@@ -965,7 +965,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "fish",
-            question: "What meal comes with hash brown?",
+            question: "What of these meals comes with hash brown?",
             options: ['Tricolour', 'CR7', 'Raft', 'Tuber'],
             answer : 'Tricolour'
         },
@@ -1109,12 +1109,55 @@ const quizzes = {  // lista domande
     ],
 
     pork: [
+
+        // pork
+
         {
             category: "pork",
-            question: "How many toasts between ET, Val, Sheperd's Delight, Mount Hood?",
-            options: ['5','8', '7', '3'],
-            answer: "5"
+            question: "What's the difference between Ozzy Open and Wimbledon?",
+            options: ['Ozzy Open has three pork bellies, Wimbledon has six', "Ozzy Open has rocky carrots, Wimbledon hasn't", 'Ozzy Open has pork bellies, mashed potato, rocky carrots, gravy, Wimbledon has pork bellies, waffled fries, rocky carrots', 'Ozzy Open comes with shoestring fries, Wimbledon with waffled fries'],
+            answer: "Ozzy Open has three pork bellies, Wimbledon has six"
         },
+        {
+            category: "pork",
+            question: "What meal is: Pulled lamb, mashed potato, gravy, rocky carrots?",
+            options: ['Mount Hood', 'Drysdale', "Bridal Crown", "Paddy 0"],
+            answer: "Bridal Crown"
+        },
+        {
+            category: "pork",
+            question: "Which fries does Drysdale come with?",
+            options: ['Shoestring', 'Waffled', 'Sweet potato', "It doesn't come with fries"],
+            answer: "Sweet potato"
+        },
+        {
+            category: "pork",
+            question: "Which of these meals is served with rocky carrots?",
+            options: ['Double R', "Shearer's Classic", 'Eureka', 'Abercorn'],
+            answer: "Eureka"
+        },
+        {
+            category: "pork",
+            question: "Which of these meals come with toast?",
+            options: ['Double R', 'Bridal Crown', 'Eureka', 'No one'],
+            answer: "No one"
+        },
+        {
+            category: "pork",
+            question: "In what meal are pork bellies not cooked in BBQ sauce?",
+            options: ['Eureka', 'Wimbledon', 'Double R', 'Ozzy Open'],
+            answer: "Eureka"
+        },
+        {
+            category: "pork",
+            question: "What of these meals is served with gravy?",
+            options: ['Ozzy Open', "Shearer's Classic", 'Double R', 'Paddy 0'],
+            answer: "Shearer's Classic"
+        },
+        
+
+        // mince
+
         {
             category: "pork",
             question: "In which of these meals is mashed potato served?",
@@ -1123,9 +1166,78 @@ const quizzes = {  // lista domande
         },
         {
             category: "pork",
+            question: "What of these meals comes as a wrap?",
+            options: ['Abercorn', 'Biggleswade', 'Mount Hood', 'Police'],
+            answer: "Biggleswade"
+        },
+        {
+            category: "pork",
+            question: "What are the ingredients of Police?",
+            options: ['Mince beef, toast', 'Mashed potato, mince beef, poached egg, toast', 'Fries, mince beef, pizza cheese', 'Potato rosti, mince beef, poached egg, hollandaise sauce, toast'],
+            answer: "Mince beef, toast"
+        },
+        {
+            category: "pork",
+            question: "What of these meals comes with rocky carrots?",
+            options: ['Paddy 0', 'Tahiti', 'Stockmans Treat', "No one"],
+            answer: "No one"
+        },
+        {
+            category: "pork",
+            question: "In what meal toasts are not served?",
+            options: ['Abercorn', 'Police', "Shearer's Classic", 'Stockmans Treat'],
+            answer: "Abercorn"
+        },
+        {
+            category: "pork",
+            question: "What are the ingredients of Biggleswade?",
+            options: ['Wrap, mince beef, hash brown, pizza cheese', 'Wrap, mince beef, bacon, fried egg, BBQ sauce', 'Buns, pulled lamb, feta cheese, hollandaise sauce, leaves', 'Buns, mince beef, hash brown, fried egg, hollandaise sauce'],
+            answer: "Wrap, mince beef, hash brown, pizza cheese"
+        },
+
+        // lamb
+
+        {
+            category: "pork",
+            question: "What are the ingredients of Police?",
+            options: ['Mince beef, toast', 'Mashed potato, mince beef, poached egg, toast', 'Fries, mince beef, pizza cheese', 'Potato rosti, mince beef, poached egg, hollandaise sauce, toast'],
+            answer: "Mince beef, toast"
+        },
+        {
+            category: "pork",
+            question: "How many toasts between ET, Val, Sheperd's Delight, Mount Hood?",
+            options: ['5','8', '7', '3'],
+            answer: "5"
+        },
+        {
+            category: "pork",
             question: "In which of these meals is grilled onion served?",
             options: ['Mount Hood', 'Stockmans Treat', "Sheperd's Delight", "Shearer's Classic"],
             answer: "Sheperd's Delight"
+        },
+        {
+            category: "pork",
+            question: "What meal is: Potato rosti, lamb livers, bacons, gravy, onion rings, poached eggs, hollandaise sauce, toasts?",
+            options: ['Mount Hood', 'Stockmans Treat', "Sheperd's Delight", "Shearer's Classic"],
+            answer: "Shearer's Classic"
+        },
+        {
+            category: "pork",
+            question: "What are the ingredients of Mount Hood?",
+            options: ['Mashed potato, lamb livers, bacon, gravy toasts', 'Lamb livers, bacons, gravy, toasts', 'Mashed potato, lamb livers, bacons, poached egg, hollandaise sauce, toasts', 'Potato rosti, lamb livers, bacons, gravy, toasts'],
+            answer: "Mashed potato, lamb livers, bacon, gravy toasts"
+        },
+        {
+            category: "pork",
+            question: "How many bacons between Stockmans Treat, Shearer's Classic, Double R, Tahiti?",
+            options: ['4','5', '3', '2'],
+            answer: "4"
+        },
+        {
+            category: "pork",
+            question: "How many serves of lamb liver between Mount Hood, Bridal Crown, Drysdale, Police?",
+            options: ['1','4', '3', '2'],
+            answer: "1"
         },
     ],
 

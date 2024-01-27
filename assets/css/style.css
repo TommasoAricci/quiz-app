@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cafe';
+    font-family: 'Cafe', sans-serif;
+    font-display: swap;
     font-weight: 900;
 }
 
