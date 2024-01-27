@@ -137,7 +137,7 @@
 
     h2{
         font-size: 16px;
-        bottom: -40%;
+        bottom: -30%;
     }
 
     .title{
@@ -182,9 +182,6 @@
         margin-bottom: 20px;
     }
 
-    h2{
-        bottom: -35%;
-    }
 }
 
 @media only screen and (min-height: 951px) and (max-height: 1099px){
