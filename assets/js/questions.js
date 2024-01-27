@@ -293,7 +293,7 @@ const quizzes = {  // lista domande
         {
             category: "steaks",
             question: "In which meals are creamy mushrooms not served?",
-            options: ["Hillary", "Highfields", "HammerThrow", "King Charles"],
+            options: ["Hillary", "Highfields", "Hammer Throw", "King Charles"],
             answer : "King Charles"
         },
         {
@@ -310,7 +310,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "steaks",
-            question: "How many handfuls of normal fries between Thrid, Prince William, Bradman, Highfields?",
+            question: "How many handfuls of normal fries between Third, Prince William, Bradman, Highfields?",
             options: ["2", '3', '1', '4'],
             answer : "2"
         },
@@ -356,7 +356,7 @@ const quizzes = {  // lista domande
         {
             category: "steaks",
             question: "What meals are served with chilli?",
-            options: ['Paper White, Skippy, Roger Banister', 'Rooster, Julius, Paper White', 'Skippy, Cherry Blossom, PAB', 'PAB, Paper White, SKippy'],
+            options: ['Paper White, Skippy, Roger Banister', 'Rooster, Julius, Paper White', 'Skippy, Cherry Blossom, PAB', 'PAB, Paper White, Skippy'],
             answer : 'Paper White, Skippy, Roger Banister'
         },
         {
@@ -408,7 +408,7 @@ const quizzes = {  // lista domande
         {
             category: "steak",
             question: "What are the ingredients of Jumping Frog?",
-            options: ['Pumpkin soup, turkish bread', 'Pumpkin soup, grilled chorizo, grilled onion, turkish bread', 'Haystacks tomato soup, croutons, puring cream', 'Pumkin soup, sliced chicken breast, grilled onion, pouring cream'],
+            options: ['Pumpkin soup, turkish bread', 'Pumpkin soup, grilled chorizo, grilled onion, turkish bread', 'Haystacks tomato soup, croutons, pouring cream', 'Pumpkin soup, sliced chicken breast, grilled onion, pouring cream'],
             answer : 'Pumpkin soup, turkish bread'
         },
         {
@@ -487,7 +487,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "pasta",
-            question: "Fotis comes with fettuccine, chicken breast, grilled mushroom, creamy sauce, parmesa cheese and...?",
+            question: "Fotis comes with fettuccine, chicken breast, grilled mushrooms, creamy sauce, parmesa cheese and...?",
             options: ['Spinach', 'Smoked salmon', 'Prawns', 'Monet tomatoes'],
             answer : 'Spinach'
         },
@@ -539,8 +539,8 @@ const quizzes = {  // lista domande
         {
             category: "pasta",
             question: "Which of these meals is suitable for vegetarians?",
-            options: ['Benny Fit', 'Apollo 11', 'Disco Ball', 'Orange Progress'],
-            answer : 'Benny Fit'
+            options: ['Benny Fit', 'Apollo 11', 'Disco Ball', 'All of these'],
+            answer : 'All of these'
         },
         {
             category: "pasta",
@@ -577,8 +577,8 @@ const quizzes = {  // lista domande
         },
         {
             category: "pasta",
-            question: "Is there any vegeterian pie?",
-            options: ['Yes, Orange Progress', 'Yes, Barret Browning', 'Yes, Ripper', 'No'],
+            question: "Is there any vegetarian pie?",
+            options: ['Yes, Orange Progress', 'Yes, Barrett Browning', 'Yes, Ripper', 'No'],
             answer : 'No'
         },
     ],
@@ -586,7 +586,7 @@ const quizzes = {  // lista domande
     burgers: [
         {
             category: "burgers",
-            question: "What are the ingredients of Green & Gold",
+            question: "What are the ingredients of Green & Gold?",
             options: ["Buns, mayo, green leaves, tomato, beef patty, cheese, fried egg, hash brown, bacon",
             "Buns peri peri mayo, green leaves, tomato, beef patty, bacon",
             "Buns, mayo, green leaves, tomato, fried chicken, cheese",
@@ -625,7 +625,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "burgers",
-            question: "What burgers doesn't come with salad?",
+            question: "What burger doesn't come with salad?",
             options: ['BBBB', '99', 'Robot', 'Thrilla from Manilla'],
             answer : 'Thrilla from Manilla'
         },
@@ -674,7 +674,7 @@ const quizzes = {  // lista domande
         {
             category: "burgers",
             question: "What burger is not served with fries?",
-            options: ['Southern Cross', 'JFK', 'Virgin', 'Everyone is served with fries'],
+            options: ['Southern Cross', 'JFK', 'Virgin', 'Every burger is served with fries'],
             answer : "Southern Cross"
         },
         {
@@ -762,7 +762,7 @@ const quizzes = {  // lista domande
             category: "omelette",
             question: "What omelette is: Chorizo, onion, spinach, cheddar cheese, toast?",
             options: ['Treasure Map', 'Stephanie Rice', 'Carbon Tax', 'Mark Webber'],
-            answer : 'Barty'
+            answer : 'Treasure Map'
         },
 
         // french toast
@@ -802,8 +802,8 @@ const quizzes = {  // lista domande
 
         {
             category: "omelette",
-            question: "What of these meals comes with pork belly?",
-            options: ['Duffel Coat', 'Red Hat', 'House of Commons'],
+            question: "What of these meals comes with pork bellies?",
+            options: ['Duffel Coat', 'Red Hat', 'House of Commons', 'Samoa'],
             answer : 'Red Hat'
         },
         {
@@ -815,7 +815,7 @@ const quizzes = {  // lista domande
         {
             category: "omelette",
             question: "What are the ingredients of House of Commons?",
-            options: ['Scrambled eggs mix with crispy bacon, spinach, cheddar cheese', 'Strawberries, berry compote, whipped cream, warm caramel sauce', 'Pork belly, poached eggs, hollandaise sauce', 'Scrambled eggs mix with crispy bacon, spinach, cheddar cheese'],
+            options: ['Crepes, scrambled eggs mix with crispy bacon, spinach, cheddar cheese', 'Crepes, strawberries, berry compote, whipped cream, caramel sauce', 'French toasts, pork bellies, poached eggs, hollandaise sauce', 'French toasts, scrambled eggs mix with crispy bacon, spinach, cheddar cheese'],
             answer : 'Scrambled eggs mix with crispy bacon, spinach, cheddar cheese'
         },
         {
@@ -894,7 +894,7 @@ const quizzes = {  // lista domande
         {
             category: "fish",
             question: "Miss Watson comes with mashed potato, fried chicken, gravy, and...?",
-            options: ['Grilled onion', 'Toast', 'poaxhed egg', 'Fries'],
+            options: ['Grilled onion', 'Toast', 'poached egg', 'Fries'],
             answer : 'Grilled onion'
         },
         {
@@ -906,8 +906,8 @@ const quizzes = {  // lista domande
         {
             category: "fish",
             question: "What are the ingredients of Sound of Music?",
-            options: ['Chicken Schnitzel, pizza cheese, gravy, fries', 'Fried chicken, pizza cheese, gravy, fries', 'Fried chicken, fries, pickle, peri peri mayo', 'Chicken schnitzel, waffled fries, rocky carrots, creamy mushrooms'],
-            answer : 'Chicken Schnitzel, pizza cheese, gravy, fries'
+            options: ['Chicken schnitzel, pizza cheese, gravy, fries', 'Fried chicken, pizza cheese, gravy, fries', 'Fried chicken, fries, pickle, peri peri mayo', 'Chicken schnitzel, waffled fries, rocky carrots, creamy mushrooms'],
+            answer : 'Chicken schnitzel, pizza cheese, gravy, fries'
         },
         {
             category: "fish",
@@ -915,37 +915,41 @@ const quizzes = {  // lista domande
             options: ['Aioli', 'Peri peri mayo', 'Sweet chilli mayo', 'Creamy parmesan dressing'],
             answer : 'Sweet chilli mayo'
         },
+
+        /*
         {
             category: "fish",
             question: "What of these meals comes with gravy?",
             options: ['Miss Watson', 'Hammer Throw', 'Dresden', 'Raft'],
             answer : 'Miss Watson'
         },
+
+        */
     
         // Fries
 
         {
             category: "fish",
             question: "In what meal four handfuls of fries are served?",
-            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
-            answer : 'Four handfuls of fries are not served'
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "No one"],
+            answer : 'No one'
         },
         {
             category: "fish",
             question: "In what meal two handfuls of fries are served?",
-            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "No one"],
             answer : 'Colin Meads'
         },
         {
             category: "fish",
             question: "In what meal three handfuls of fries are served?",
-            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "No one"],
             answer : 'Sid Going'
         },
         {
             category: "fish",
             question: "In what meal one handful of fries is served?",
-            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "It doesn't exist"],
+            options: ['Buck Shelford', 'Colin Meads', 'Sid Going', "No one"],
             answer : 'Buck Shelford'
         },
         {
@@ -1000,7 +1004,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "sweets",
-            question: "Macca comes with Cheesecake, nuts, berry compote, whipped cream, and...?",
+            question: "Macca comes with cheesecake, nuts, berry compote, whipped cream, and...?",
             options: ['Warm caramel sauce', 'Maple syrup', 'Fruit salad', 'Ice cream'],
             answer : "Warm caramel sauce"
         },
@@ -1025,7 +1029,7 @@ const quizzes = {  // lista domande
         {
             category: "sweets",
             question: "What of these meals comes with two ice creams?",
-            options: ['Go Between', 'Alisha Doubled Back' ,'Tower Bridge', "It doesn't exist"],
+            options: ['Go Between', 'Alisha Doubled Back' ,'Tower Bridge', "No one"],
             answer : "Go Between"
         },
 
@@ -1068,17 +1072,17 @@ const quizzes = {  // lista domande
             category: "sweets",
             question: "What meal is: Waffle, ice cream, maple syrup, berry compote?",
             options: ['Vancouver', 'Kee', 'Stirling Moss', 'Harriet'],
-            answer : "Mountie"
+            answer : "Harriet"
         },
         {
             category: "sweets",
             question: "What of these meals doesn't come with nuts?",
-            options: ['Alisha Doubled Back', 'Toronto', 'Ivy'],
-            answer : "Mountie"
+            options: ['Tower Bridge', 'Toronto', 'Ivo', 'Alisha Doubled Back'],
+            answer : "Ivo"
         },
         {
             category: "sweets",
-            question: "Ivy comes with Mash avo, wilted spinach, fruit salad, raspberries, toast, and...?",
+            question: "Ivo comes with mash avo, wilted spinach, fruit salad, raspberries, toast, and...?",
             options: ['Grilled tomatoes', 'Whipped cream', 'Ice cream', 'Bacon'],
             answer : "Grilled tomatoes"
         },
@@ -1103,7 +1107,7 @@ const quizzes = {  // lista domande
         {
             category: "sweets",
             question: "What meal is: Fruit salad, raspberries, berry compote, yoghurt, nuts?",
-            options: ['Toronto', 'Ivy', 'Go Between', 'Rapture'],
+            options: ['Toronto', 'Ivo', 'Go Between', 'Rapture'],
             answer : "Toronto"
         },
     ],
@@ -1115,7 +1119,7 @@ const quizzes = {  // lista domande
         {
             category: "pork",
             question: "What's the difference between Ozzy Open and Wimbledon?",
-            options: ['Ozzy Open has three pork bellies, Wimbledon has six', "Ozzy Open has rocky carrots, Wimbledon hasn't", 'Ozzy Open has pork bellies, mashed potato, rocky carrots, gravy, Wimbledon has pork bellies, waffled fries, rocky carrots', 'Ozzy Open comes with shoestring fries, Wimbledon with waffled fries'],
+            options: ['Ozzy Open has three pork bellies, Wimbledon has six', "Ozzy Open has rocky carrots, Wimbledon hasn't", 'Ozzy Open has six pork bellies, Wimbledon has three', 'Ozzy Open comes with shoestring fries, Wimbledon with waffled fries'],
             answer: "Ozzy Open has three pork bellies, Wimbledon has six"
         },
         {
@@ -1194,15 +1198,15 @@ const quizzes = {  // lista domande
             options: ['Wrap, mince beef, hash brown, pizza cheese', 'Wrap, mince beef, bacon, fried egg, BBQ sauce', 'Buns, pulled lamb, feta cheese, hollandaise sauce, leaves', 'Buns, mince beef, hash brown, fried egg, hollandaise sauce'],
             answer: "Wrap, mince beef, hash brown, pizza cheese"
         },
+        {
+            category: "pork",
+            question: "Hoe many poached eggs between Tahiti, Paddy 0, Sharer's Classic, Mount Hood?",
+            options: ['4', '5', '1', '2'],
+            answer: "4"
+        },
 
         // lamb
 
-        {
-            category: "pork",
-            question: "What are the ingredients of Police?",
-            options: ['Mince beef, toast', 'Mashed potato, mince beef, poached egg, toast', 'Fries, mince beef, pizza cheese', 'Potato rosti, mince beef, poached egg, hollandaise sauce, toast'],
-            answer: "Mince beef, toast"
-        },
         {
             category: "pork",
             question: "How many toasts between ET, Val, Sheperd's Delight, Mount Hood?",
