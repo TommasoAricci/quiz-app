@@ -139,12 +139,11 @@
 
     .title{
         width: 350px;
-        margin-top: 90px;
+        margin-top: 100px;
     }
 
     .logo{
-        margin-bottom: 0px;
-        width: 65px;
+        width: 70px;
     }
 
     .scoreText{
@@ -164,7 +163,13 @@
     .back{
         right: 67%;
     }
+}
 
+@media only screen and (min-width: 701px) {
+
+    .question-container{
+        max-width: 500px;
+    }
 
 }
 
