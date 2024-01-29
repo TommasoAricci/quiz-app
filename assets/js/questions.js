@@ -1200,7 +1200,7 @@ const quizzes = {  // lista domande
         },
         {
             category: "pork",
-            question: "Hoe many poached eggs between Tahiti, Paddy 0, Sharer's Classic, Mount Hood?",
+            question: "How many poached eggs between Tahiti, Paddy 0, Sharer's Classic, Mount Hood?",
             options: ['4', '5', '1', '2'],
             answer: "4"
         },
@@ -1228,7 +1228,7 @@ const quizzes = {  // lista domande
         {
             category: "pork",
             question: "What are the ingredients of Mount Hood?",
-            options: ['Mashed potato, lamb livers, bacon, gravy toasts', 'Lamb livers, bacons, gravy, toasts', 'Mashed potato, lamb livers, bacons, poached egg, hollandaise sauce, toasts', 'Potato rosti, lamb livers, bacons, gravy, toasts'],
+            options: ['Mashed potato, lamb livers, bacon, gravy, toasts', 'Lamb livers, bacons, gravy, toasts', 'Mashed potato, lamb livers, bacons, poached egg, hollandaise sauce, toasts', 'Potato rosti, lamb livers, bacons, gravy, toasts'],
             answer: "Mashed potato, lamb livers, bacon, gravy toasts"
         },
         {
