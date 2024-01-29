@@ -71,6 +71,10 @@ body{
     flex-wrap: wrap;
 }
 
+.logo{
+    margin-bottom: 10px;
+}
+
 .line{
     width: 100%;
     margin-top: 1.5px;
@@ -88,13 +92,9 @@ h1{
 }
 
 h2{
-    position: absolute;
     width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: -27%;
-
     font-size: 13px;
+    margin-top: 20px;
 }
 
 .categories{

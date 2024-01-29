@@ -16,11 +16,6 @@
         font-size: 30px;
    }
 
-   h2{
-        font-size: 11px;
-        bottom: -45%;
-   }
-
    .categories{
         width: 50%;
         height: 300px;
@@ -94,18 +89,13 @@
    }
 
    .title{
-        margin-top: 80px;
+        margin-top: 100px;
         width: 300px;
    }
 
    .line{
         margin-top: 1px;
         margin-bottom: 0.5px;
-   }
-
-   h2{
-        bottom: -40%;
-        font-size: 13px;
    }
 
    .back{
@@ -144,20 +134,17 @@
 
 
     h1{
-        font-size: 50px;
-    }
-
-    h2{
-        font-size: 16px;
-        bottom: -30%;
+        font-size: 40px;
     }
 
     .title{
         width: 350px;
+        margin-top: 90px;
     }
 
     .logo{
-        width: 100px;
+        margin-bottom: 0px;
+        width: 65px;
     }
 
     .scoreText{
@@ -186,23 +173,21 @@
 @media only screen and (min-height: 740px) and (max-height: 799px){
 
     .title{
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
-    h2{
-        bottom: -45%;
-    }
 
 }
 
 @media only screen and (min-height: 800px) and (max-height: 950px) {      /* modifica altezza solo posizione elementi*/
 
     .title{
-        top: 5%;
+        top: 8%;
     }
 
     .logo{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        width: 90px;
     }
 
 }
@@ -217,13 +202,10 @@
         margin-bottom: 20px;
     }
 
-    h2{
-        bottom: -40%;
-    }
 
 }
 
-@media only screen and (min-height: 1100px) {
+@media only screen and (min-height: 1100px) and (max-height: 1199px){
 
     .title{
         top: 15%;
@@ -231,10 +213,6 @@
 
     .logo{
         margin-bottom: 20px;
-    }
-
-    h2{
-        bottom: -40%;
     }
 
 }
